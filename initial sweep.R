@@ -94,7 +94,8 @@ money_per_constituency <-
   select(money_per_constituency,
          first_party,
          region_name,
-         Constituency) %>% 
+         Constituency,
+         ons_id) %>% 
   distinct()
 
 # where's the money gone?
@@ -138,4 +139,8 @@ ggsave("money_per_constituency.png",
        width = 8,
        height = 60,
        limitsize = FALSE)
-  
+
+# export to csv so i can open qgis  
+write_csv(money_per_constituency,
+          "money_per_constituency.csv")
+

@@ -1,0 +1,197 @@
+## comparing cultural recovery fund with other ace spend
+# by local authority this time
+
+# sources:
+# project grant data from here
+# https://www.artscouncil.org.uk/national-lottery-project-grants/project-grants-data
+# npo data from here
+# https://www.artscouncil.org.uk/national-portfolio-2018-22/more-data-2018-22
+# population data from here
+# https://www.nomisweb.co.uk/census/2011/ks101ew
+
+### loading packages
+library(tidyverse)
+library(readxl)
+library(scales)
+library(plotly)
+library(htmlwidgets)
+
+# loading data
+crf_money <- 
+  read_excel("CRF_Round_one_under_1_Million_awards_offered_121020.xlsx",
+             2)
+project_grants_18_19 <- 
+  read_excel("Project_Grants_Awards_201819_0.xlsx",
+             2,
+             skip = 2)
+project_grants_19_20 <- 
+  read_excel("Project_Grants_Awards_201920_0.xlsx",
+             2,
+             skip = 2)
+project_grants_20_21 <- 
+  read_excel("Project_Grants_Awards_202021_0.xlsx",
+             2,
+             skip = 2)
+npo_data <- 
+  read_excel("NPO_2018_12082020_0.xlsx")
+population <- 
+  read_csv("bulk (23).csv")
+
+# append project grants
+project_grants <- 
+  rbind(project_grants_18_19,
+        project_grants_19_20,
+        project_grants_20_21)
+
+# get data frame with total money per LA
+project_grant_money <- 
+  project_grants %>% 
+  group_by(`Local authority`) %>% 
+  summarise(project_grant_money = sum(`Award amount`)) %>% 
+  rename(la_name = 
+           `Local authority`)
+
+# same thing, NPOs
+npo_money <- 
+  npo_data %>% 
+  group_by(`Local Authority`) %>% 
+  summarise(npo_money = sum(`TOTAL Portfolio grant 18/22 - £`)) %>% 
+  rename(la_name = 
+           `Local Authority`)
+npo_money$la_name[npo_money$la_name == "Shepway"] <- 
+  "Folkestone and Hythe"
+
+# clean up CRF money
+crf_money <- 
+  crf_money %>% 
+  select(`£ Award offered`,
+         `Local Authority Name`) %>% 
+  rename(crf_money = 
+           `£ Award offered`,
+         la_name = 
+           `Local Authority Name`) %>% 
+  group_by(la_name) %>% 
+  summarise(crf_money = 
+              sum(crf_money)) 
+
+# clean up census data
+population <- 
+  population %>% 
+  select(geography, 
+         `Variable: All usual residents; measures: Value`) %>% 
+  rename(population = 
+           `Variable: All usual residents; measures: Value`) %>% 
+  rename(la_name = 
+           geography)
+
+# add NPO data to census data
+pop_and_npo <- 
+  full_join(population, npo_money) 
+
+# add project grants
+pop_and_npo_and_project_grant <- 
+  full_join(pop_and_npo, project_grant_money) 
+# nb there's a number of issues here
+# some non-English cases
+# some issues as a consequence of boundary changes:
+# Bournemouth, Christchurch, Poole
+# Bucks
+# Dorset
+# East Suffolk
+# Somerset West and Taunton
+# West Suffolk
+
+# add CRF money
+pop_and_money <- 
+  full_join(pop_and_npo_and_project_grant,
+          crf_money)
+
+# there remain issues with some cases 
+# where boundaries have changed
+for_plotly <- 
+  pop_and_money %>% 
+  filter(!is.na(population)) %>% 
+  mutate(npo_money = replace_na(npo_money, 0)) %>% 
+  mutate(crf_money = replace_na(crf_money, 0)) %>% 
+  mutate(money_per_head = (npo_money + 
+                             project_grant_money)/
+           population) %>%
+  mutate(npo_money_per_head = npo_money/population) %>% 
+  mutate(crf_money_per_head = crf_money/population) %>% 
+  mutate(project_money_per_head = project_grant_money/population)
+
+# plot it
+plotly_01 <- 
+  ggplotly(
+  ggplot(for_plotly) +
+  aes(x = npo_money_per_head,
+      y = crf_money_per_head) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  geom_point(aes(text = paste(la_name))) +
+  scale_x_log10() +
+  scale_y_log10() +
+  labs(x = "NPO money per head over 5 years (log)",
+       y = "Cultural Recovery Fund money per head (log)") +
+  theme_minimal() +
+  theme(panel.grid = element_blank()) +
+  theme(axis.ticks = element_blank()) +
+  theme(axis.text = element_blank()),
+  tooltip = "text"
+)
+saveWidget(plotly_01, "npo_crf.html", selfcontained = F, libdir = "lib")
+
+ggplot(for_plotly) +
+  aes(x = npo_money_per_head,
+      y = crf_money_per_head) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  geom_point() +
+  scale_x_log10() +
+  scale_y_log10() +
+  labs(x = "NPO money per head over 5 years (log)",
+       y = "Cultural Recovery Fund money per head (log)") +
+  theme_minimal() +
+  theme(panel.grid = element_blank()) +
+  theme(axis.ticks = element_blank()) +
+  theme(axis.text = element_blank())
+ggsave("NPO money and CRF money.png")        
+
+# do it again, project grant money
+
+plotly_02 <- 
+  ggplotly(
+  ggplot(for_plotly) +
+    aes(x = project_money_per_head,
+        y = crf_money_per_head) +
+    geom_smooth(method = "lm",
+                se = FALSE) +
+    geom_point(aes(text = paste(la_name))) +
+    scale_x_log10() +
+    scale_y_log10() +
+    labs(x = "Project Grant money per head over 2 and a bit years (log)",
+         y = "Cultural Recovery Fund money per head (log)") +
+    theme_minimal() +
+    theme(panel.grid = element_blank()) +
+    theme(axis.ticks = element_blank()) +
+    theme(axis.text = element_blank()),
+  tooltip = "text"
+)
+saveWidget(plotly_01, "project_grant_crf.html", selfcontained = F, libdir = "lib")
+
+
+ggplot(for_plotly) +
+  aes(x = project_money_per_head,
+      y = crf_money_per_head) +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  geom_point() +
+  scale_x_log10() +
+  scale_y_log10() +
+  labs(x = "Project Grant money per head over 2 and a bit years (log)",
+       y = "Cultural Recovery Fund money per head (log)") +
+  theme_minimal() +
+  theme(panel.grid = element_blank()) +
+  theme(axis.ticks = element_blank()) +
+  theme(axis.text = element_blank())
+ggsave("project grant money and CRF money.png")
