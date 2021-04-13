@@ -1,0 +1,943 @@
+la_name,Geography1,population,money_per_la,source,money_per_head
+Ashford,Non-metropolitan District,130032,253389,ACE capital kickstart,1.95
+Babergh,Non-metropolitan District,92036,28822,ACE capital kickstart,0.31
+Barking and Dagenham,London Borough,212906,410000,ACE capital kickstart,1.93
+Birmingham,Metropolitan District,1141816,258177,ACE capital kickstart,0.23
+Bolton,Metropolitan District,287550,400000,ACE capital kickstart,1.39
+Brighton and Hove,Unitary Authority,290885,865848,ACE capital kickstart,2.98
+"Bristol, City of",Unitary Authority,463377,6200994,ACE capital kickstart,13.38
+Camden,London Borough,270029,710999,ACE capital kickstart,2.63
+Cheshire West and Chester,Unitary Authority,343071,82476,ACE capital kickstart,0.24
+Colchester,Non-metropolitan District,194706,992271,ACE capital kickstart,5.1
+Cornwall,Unitary Authority,569578,2000000,ACE capital kickstart,3.51
+Coventry,Metropolitan District,371521,3039200,ACE capital kickstart,8.18
+Derby,Unitary Authority,257302,153500,ACE capital kickstart,0.6
+Dorset,Unitary Authority,378508,187401,ACE capital kickstart,0.5
+Eastbourne,Non-metropolitan District,103745,341002,ACE capital kickstart,3.29
+Gloucester,Non-metropolitan District,129128,128500,ACE capital kickstart,1
+Hackney,London Borough,281120,124134,ACE capital kickstart,0.44
+Hammersmith and Fulham,London Borough,185143,250857,ACE capital kickstart,1.35
+Haringey,London Borough,268647,415580,ACE capital kickstart,1.55
+"Herefordshire, County of",Unitary Authority,192801,210380,ACE capital kickstart,1.09
+Ipswich,Non-metropolitan District,136913,474652,ACE capital kickstart,3.47
+Knowsley,Metropolitan District,150862,3000000,ACE capital kickstart,19.89
+Lambeth,London Borough,326034,1461870,ACE capital kickstart,4.48
+Leeds,Metropolitan District,793139,2312650,ACE capital kickstart,2.92
+Leicester,Unitary Authority,354224,645586,ACE capital kickstart,1.82
+Liverpool,Metropolitan District,498042,123732,ACE capital kickstart,0.25
+Maidstone,Non-metropolitan District,171826,264514,ACE capital kickstart,1.54
+Manchester,Metropolitan District,552858,23141288,ACE capital kickstart,41.86
+Merton,London Borough,206548,253246,ACE capital kickstart,1.23
+Milton Keynes,Unitary Authority,269457,141392,ACE capital kickstart,0.52
+Newcastle upon Tyne,Metropolitan District,302820,85911,ACE capital kickstart,0.28
+Newcastle-under-Lyme,Non-metropolitan District,129441,48541,ACE capital kickstart,0.38
+Newham,London Borough,353134,94033,ACE capital kickstart,0.27
+Northumberland,Unitary Authority,322434,30651,ACE capital kickstart,0.1
+Norwich,Non-metropolitan District,140573,28915,ACE capital kickstart,0.21
+Nottingham,Unitary Authority,332900,411660,ACE capital kickstart,1.24
+Oxford,Non-metropolitan District,152457,163965,ACE capital kickstart,1.08
+Plymouth,Unitary Authority,262100,1326735,ACE capital kickstart,5.06
+Rotherham,Metropolitan District,265411,499999,ACE capital kickstart,1.88
+Sheffield,Metropolitan District,584853,52600,ACE capital kickstart,0.09
+Shropshire,Unitary Authority,323136,130000,ACE capital kickstart,0.4
+Somerset West and Taunton,Non-metropolitan District,155115,389000,ACE capital kickstart,2.51
+Southwark,London Borough,318830,124000,ACE capital kickstart,0.39
+Stratford-on-Avon,Non-metropolitan District,130098,25000,ACE capital kickstart,0.19
+Sunderland,Metropolitan District,277705,1380100,ACE capital kickstart,4.97
+Tameside,Metropolitan District,226493,234721,ACE capital kickstart,1.04
+Tower Hamlets,London Borough,324745,3067500,ACE capital kickstart,9.45
+Tunbridge Wells,Non-metropolitan District,118724,291638,ACE capital kickstart,2.46
+Wakefield,Metropolitan District,348312,1218560,ACE capital kickstart,3.5
+Westminster,London Borough,261317,71672,ACE capital kickstart,0.27
+Wolverhampton,Metropolitan District,263357,159758,ACE capital kickstart,0.61
+Worcester,Non-metropolitan District,101222,145915,ACE capital kickstart,1.44
+York,Unitary Authority,210618,28000,ACE capital kickstart,0.13
+Adur,Non-metropolitan District,64301,56850,ACE grants round 1,0.88
+Allerdale,Non-metropolitan District,97761,1064642,ACE grants round 1,10.89
+Amber Valley,Non-metropolitan District,128147,212606,ACE grants round 1,1.66
+Arun,Non-metropolitan District,160758,147200,ACE grants round 1,0.92
+Ashfield,Non-metropolitan District,127918,96228,ACE grants round 1,0.75
+Ashford,Non-metropolitan District,130032,492372,ACE grants round 1,3.79
+Babergh,Non-metropolitan District,92036,121713,ACE grants round 1,1.32
+Barking and Dagenham,London Borough,212906,784743,ACE grants round 1,3.69
+Barnet,London Borough,395869,1599175,ACE grants round 1,4.04
+Barnsley,Metropolitan District,246866,1148564,ACE grants round 1,4.65
+Barrow-in-Furness,Non-metropolitan District,67049,175000,ACE grants round 1,2.61
+Basildon,Non-metropolitan District,187199,402613,ACE grants round 1,2.15
+Basingstoke and Deane,Non-metropolitan District,176582,566222,ACE grants round 1,3.21
+Bath and North East Somerset,Unitary Authority,193282,2560604,ACE grants round 1,13.25
+Bedford,Unitary Authority,173292,924815,ACE grants round 1,5.34
+Bexley,London Borough,248287,310665,ACE grants round 1,1.25
+Birmingham,Metropolitan District,1141816,15077541,ACE grants round 1,13.2
+Blaby,Non-metropolitan District,101526,321500,ACE grants round 1,3.17
+Blackburn with Darwen,Unitary Authority,149696,1630179,ACE grants round 1,10.89
+Blackpool,Unitary Authority,139446,1486955,ACE grants round 1,10.66
+Bolsover,Non-metropolitan District,80562,440298,ACE grants round 1,5.47
+Bolton,Metropolitan District,287550,1011989,ACE grants round 1,3.52
+Boston,Non-metropolitan District,70173,173728,ACE grants round 1,2.48
+"Bournemouth, Christchurch and Poole",Unitary Authority,395331,4102053,ACE grants round 1,10.38
+Bracknell Forest,Unitary Authority,122549,232258,ACE grants round 1,1.9
+Bradford,Metropolitan District,539776,2467354,ACE grants round 1,4.57
+Braintree,Non-metropolitan District,152604,125501,ACE grants round 1,0.82
+Brent,London Borough,329771,1396872,ACE grants round 1,4.24
+Brighton and Hove,Unitary Authority,290885,7209223,ACE grants round 1,24.78
+"Bristol, City of",Unitary Authority,463377,8725344,ACE grants round 1,18.83
+Broadland,Non-metropolitan District,130783,132220,ACE grants round 1,1.01
+Bromley,London Borough,332336,648586,ACE grants round 1,1.95
+Bromsgrove,Non-metropolitan District,99881,183943,ACE grants round 1,1.84
+Broxbourne,Non-metropolitan District,97279,243884,ACE grants round 1,2.51
+Broxtowe,Non-metropolitan District,114033,114283,ACE grants round 1,1
+Buckinghamshire,Unitary Authority,543973,1830886,ACE grants round 1,3.37
+Burnley,Non-metropolitan District,88920,721416,ACE grants round 1,8.11
+Bury,Metropolitan District,190990,338893,ACE grants round 1,1.77
+Calderdale,Metropolitan District,211455,847361,ACE grants round 1,4.01
+Cambridge,Non-metropolitan District,124798,2956561,ACE grants round 1,23.69
+Camden,London Borough,270029,13870225,ACE grants round 1,51.37
+Cannock Chase,Non-metropolitan District,100762,94000,ACE grants round 1,0.93
+Canterbury,Non-metropolitan District,165394,3407299,ACE grants round 1,20.6
+Carlisle,Non-metropolitan District,108678,545800,ACE grants round 1,5.02
+Central Bedfordshire,Unitary Authority,288648,488311,ACE grants round 1,1.69
+Charnwood,Non-metropolitan District,185851,323657,ACE grants round 1,1.74
+Chelmsford,Non-metropolitan District,178388,579999,ACE grants round 1,3.25
+Cheltenham,Non-metropolitan District,116306,2468100,ACE grants round 1,21.22
+Cherwell,Non-metropolitan District,150503,442560,ACE grants round 1,2.94
+Cheshire East,Unitary Authority,384152,2301441,ACE grants round 1,5.99
+Cheshire West and Chester,Unitary Authority,343071,1330519,ACE grants round 1,3.88
+Chesterfield,Non-metropolitan District,104900,476500,ACE grants round 1,4.54
+Chichester,Non-metropolitan District,121129,349666,ACE grants round 1,2.89
+Chorley,Non-metropolitan District,118216,51025,ACE grants round 1,0.43
+City of Edinburgh,NA,NA,126650,ACE grants round 1,NA
+City of London,London Borough,9721,2760173,ACE grants round 1,283.94
+Colchester,Non-metropolitan District,194706,608244,ACE grants round 1,3.12
+Copeland,Non-metropolitan District,68183,600678,ACE grants round 1,8.81
+Corby,Non-metropolitan District,72218,198776,ACE grants round 1,2.75
+Cornwall,Unitary Authority,569578,2306209,ACE grants round 1,4.05
+Cotswold,Non-metropolitan District,89862,597494,ACE grants round 1,6.65
+County Durham,Unitary Authority,530094,2464541,ACE grants round 1,4.65
+Coventry,Metropolitan District,371521,2795309,ACE grants round 1,7.52
+Craven,Non-metropolitan District,57142,373871,ACE grants round 1,6.54
+Crawley,Non-metropolitan District,112409,111350,ACE grants round 1,0.99
+Croydon,London Borough,386710,357260,ACE grants round 1,0.92
+Darlington,Unitary Authority,106803,1106019,ACE grants round 1,10.36
+Dartford,Non-metropolitan District,112606,628005,ACE grants round 1,5.58
+Derby,Unitary Authority,257302,1993699,ACE grants round 1,7.75
+Derbyshire Dales,Non-metropolitan District,72325,559957,ACE grants round 1,7.74
+Doncaster,Metropolitan District,311890,301454,ACE grants round 1,0.97
+Dorset,Unitary Authority,378508,2446866,ACE grants round 1,6.46
+Dover,Non-metropolitan District,118131,563067,ACE grants round 1,4.77
+Dudley,Metropolitan District,321596,2824387,ACE grants round 1,8.78
+Ealing,London Borough,341806,1220086,ACE grants round 1,3.57
+East Cambridgeshire,Non-metropolitan District,89840,206590,ACE grants round 1,2.3
+East Hampshire,Non-metropolitan District,122308,340278,ACE grants round 1,2.78
+East Hertfordshire,Non-metropolitan District,149748,314536,ACE grants round 1,2.1
+East Lindsey,Non-metropolitan District,141727,299500,ACE grants round 1,2.11
+East Northamptonshire,Non-metropolitan District,94527,58823,ACE grants round 1,0.62
+East Riding of Yorkshire,Unitary Authority,341173,398179,ACE grants round 1,1.17
+East Staffordshire,Non-metropolitan District,119754,51565,ACE grants round 1,0.43
+East Suffolk,Non-metropolitan District,249461,2969558,ACE grants round 1,11.9
+Eastbourne,Non-metropolitan District,103745,462916,ACE grants round 1,4.46
+Eastleigh,Non-metropolitan District,133584,652546,ACE grants round 1,4.88
+Eden,Non-metropolitan District,53253,100000,ACE grants round 1,1.88
+Elmbridge,Non-metropolitan District,136795,1773570,ACE grants round 1,12.97
+Enfield,London Borough,333794,896011,ACE grants round 1,2.68
+Epping Forest,Non-metropolitan District,131689,122885,ACE grants round 1,0.93
+Epsom and Ewell,Non-metropolitan District,80627,54000,ACE grants round 1,0.67
+Erewash,Non-metropolitan District,115371,50000,ACE grants round 1,0.43
+Exeter,Non-metropolitan District,131405,1021530,ACE grants round 1,7.77
+Fareham,Non-metropolitan District,116233,399431,ACE grants round 1,3.44
+Fenland,Non-metropolitan District,101850,128000,ACE grants round 1,1.26
+Folkestone and Hythe,Non-metropolitan District,112996,626432,ACE grants round 1,5.54
+Forest of Dean,Non-metropolitan District,86791,146000,ACE grants round 1,1.68
+Fylde,Non-metropolitan District,80780,237860,ACE grants round 1,2.94
+Gateshead,Metropolitan District,202055,3880354,ACE grants round 1,19.2
+Gedling,Non-metropolitan District,117896,150000,ACE grants round 1,1.27
+Gloucester,Non-metropolitan District,129128,330000,ACE grants round 1,2.56
+Gravesham,Non-metropolitan District,106939,108635,ACE grants round 1,1.02
+Great Yarmouth,Non-metropolitan District,99336,498423,ACE grants round 1,5.02
+Greenwich,London Borough,287942,3871251,ACE grants round 1,13.44
+Guildford,Non-metropolitan District,148998,1004495,ACE grants round 1,6.74
+Hackney,London Borough,281120,11447984,ACE grants round 1,40.72
+Halton,Unitary Authority,129410,392660,ACE grants round 1,3.03
+Hambleton,Non-metropolitan District,91594,353519,ACE grants round 1,3.86
+Hammersmith and Fulham,London Borough,185143,2856366,ACE grants round 1,15.43
+Harborough,Non-metropolitan District,93807,85000,ACE grants round 1,0.91
+Haringey,London Borough,268647,1404448,ACE grants round 1,5.23
+Harlow,Non-metropolitan District,87067,531551,ACE grants round 1,6.11
+Harrogate,Non-metropolitan District,160831,660249,ACE grants round 1,4.11
+Harrow,London Borough,251160,1326037,ACE grants round 1,5.28
+Hart,Non-metropolitan District,97073,55000,ACE grants round 1,0.57
+Hartlepool,Unitary Authority,93663,305418,ACE grants round 1,3.26
+Hastings,Non-metropolitan District,92661,914780,ACE grants round 1,9.87
+Havant,Non-metropolitan District,126220,156000,ACE grants round 1,1.24
+Havering,London Borough,259552,245000,ACE grants round 1,0.94
+"Herefordshire, County of",Unitary Authority,192801,1055565,ACE grants round 1,5.47
+Hertsmere,Non-metropolitan District,104919,631708,ACE grants round 1,6.02
+High Peak,Non-metropolitan District,92666,632538,ACE grants round 1,6.83
+Hillingdon,London Borough,306870,606794,ACE grants round 1,1.98
+Hinckley and Bosworth,Non-metropolitan District,113136,53000,ACE grants round 1,0.47
+Horsham,Non-metropolitan District,143791,362000,ACE grants round 1,2.52
+Hounslow,London Borough,271523,337975,ACE grants round 1,1.24
+Huntingdonshire,Non-metropolitan District,177963,103066,ACE grants round 1,0.58
+Hyndburn,Non-metropolitan District,81043,157270,ACE grants round 1,1.94
+Ipswich,Non-metropolitan District,136913,1236039,ACE grants round 1,9.03
+Isle of Wight,Unitary Authority,141771,671541,ACE grants round 1,4.74
+Islington,London Borough,242467,16404332,ACE grants round 1,67.66
+Kensington and Chelsea,London Borough,156129,6418134,ACE grants round 1,41.11
+King's Lynn and West Norfolk,Non-metropolitan District,151383,486509,ACE grants round 1,3.21
+"Kingston upon Hull, City of",Unitary Authority,259778,2715444,ACE grants round 1,10.45
+Kingston upon Thames,London Borough,177507,918829,ACE grants round 1,5.18
+Kirklees,Metropolitan District,439787,1203157,ACE grants round 1,2.74
+Knowsley,Metropolitan District,150862,2000174,ACE grants round 1,13.26
+Lambeth,London Borough,326034,15744234,ACE grants round 1,48.29
+Lancaster,Non-metropolitan District,146038,393678,ACE grants round 1,2.7
+Leeds,Metropolitan District,793139,11852884,ACE grants round 1,14.94
+Leicester,Unitary Authority,354224,2736443,ACE grants round 1,7.73
+Lewes,Non-metropolitan District,103268,190500,ACE grants round 1,1.84
+Lewisham,London Borough,305842,1700663,ACE grants round 1,5.56
+Lichfield,Non-metropolitan District,104756,343572,ACE grants round 1,3.28
+Lincoln,Non-metropolitan District,99299,1674900,ACE grants round 1,16.87
+Liverpool,Metropolitan District,498042,10101618,ACE grants round 1,20.28
+Luton,Unitary Authority,213052,714700,ACE grants round 1,3.35
+Maidstone,Non-metropolitan District,171826,65829,ACE grants round 1,0.38
+Maldon,Non-metropolitan District,64926,52400,ACE grants round 1,0.81
+Malvern Hills,Non-metropolitan District,78698,1181149,ACE grants round 1,15.01
+Manchester,Metropolitan District,552858,15702681,ACE grants round 1,28.4
+Mansfield,Non-metropolitan District,109313,250229,ACE grants round 1,2.29
+Medway,Unitary Authority,278556,350500,ACE grants round 1,1.26
+Melton,Non-metropolitan District,51209,120000,ACE grants round 1,2.34
+Mendip,Non-metropolitan District,115587,596216,ACE grants round 1,5.16
+Merton,London Borough,206548,622200,ACE grants round 1,3.01
+Mid Devon,Non-metropolitan District,82311,294169,ACE grants round 1,3.57
+Mid Suffolk,Non-metropolitan District,103895,300335,ACE grants round 1,2.89
+Mid Sussex,Non-metropolitan District,151022,264513,ACE grants round 1,1.75
+Middlesbrough,Unitary Authority,140980,449809,ACE grants round 1,3.19
+Milton Keynes,Unitary Authority,269457,2760496,ACE grants round 1,10.24
+Mole Valley,Non-metropolitan District,87245,250000,ACE grants round 1,2.87
+New Forest,Non-metropolitan District,180086,53841,ACE grants round 1,0.3
+Newark and Sherwood,Non-metropolitan District,122421,997488,ACE grants round 1,8.15
+Newcastle upon Tyne,Metropolitan District,302820,7345207,ACE grants round 1,24.26
+Newcastle-under-Lyme,Non-metropolitan District,129441,248990,ACE grants round 1,1.92
+Newham,London Borough,353134,1717935,ACE grants round 1,4.86
+North Devon,Non-metropolitan District,97145,611416,ACE grants round 1,6.29
+North East Lincolnshire,Unitary Authority,159563,491761,ACE grants round 1,3.08
+North Hertfordshire,Non-metropolitan District,133570,307008,ACE grants round 1,2.3
+North Lincolnshire,Unitary Authority,172292,97105,ACE grants round 1,0.56
+North Norfolk,Non-metropolitan District,104837,421644,ACE grants round 1,4.02
+North Somerset,Unitary Authority,215052,923886,ACE grants round 1,4.3
+North Tyneside,Metropolitan District,207913,100000,ACE grants round 1,0.48
+North Warwickshire,Non-metropolitan District,65264,132000,ACE grants round 1,2.02
+North West Leicestershire,Non-metropolitan District,103611,175200,ACE grants round 1,1.69
+Northampton,Non-metropolitan District,224610,3063698,ACE grants round 1,13.64
+Northumberland,Unitary Authority,322434,1509993,ACE grants round 1,4.68
+Norwich,Non-metropolitan District,140573,4924176,ACE grants round 1,35.03
+Nottingham,Unitary Authority,332900,5141797,ACE grants round 1,15.45
+Nuneaton and Bedworth,Non-metropolitan District,129883,280000,ACE grants round 1,2.16
+Oadby and Wigston,Non-metropolitan District,57015,50000,ACE grants round 1,0.88
+Oldham,Metropolitan District,237110,299528,ACE grants round 1,1.26
+Oxford,Non-metropolitan District,152457,1520538,ACE grants round 1,9.97
+Pendle,Non-metropolitan District,92112,185543,ACE grants round 1,2.01
+Peterborough,Unitary Authority,202259,2296176,ACE grants round 1,11.35
+Plymouth,Unitary Authority,262100,3467613,ACE grants round 1,13.23
+Portsmouth,Unitary Authority,214905,2148537,ACE grants round 1,10
+Preston,Non-metropolitan District,143135,1536893,ACE grants round 1,10.74
+Reading,Unitary Authority,161780,2309538,ACE grants round 1,14.28
+Redbridge,London Borough,305222,1656596,ACE grants round 1,5.43
+Redcar and Cleveland,Unitary Authority,137150,297360,ACE grants round 1,2.17
+Redditch,Non-metropolitan District,85261,173074,ACE grants round 1,2.03
+Richmond upon Thames,London Borough,198019,1420285,ACE grants round 1,7.17
+Richmondshire,Non-metropolitan District,53730,161388,ACE grants round 1,3
+Rochdale,Metropolitan District,222412,725989,ACE grants round 1,3.26
+Rochford,Non-metropolitan District,87368,69000,ACE grants round 1,0.79
+Rossendale,Non-metropolitan District,71482,394975,ACE grants round 1,5.53
+Rother,Non-metropolitan District,96080,817713,ACE grants round 1,8.51
+Rotherham,Metropolitan District,265411,313442,ACE grants round 1,1.18
+Rugby,Non-metropolitan District,108935,128985,ACE grants round 1,1.18
+Rushcliffe,Non-metropolitan District,119184,98800,ACE grants round 1,0.83
+Rushmoor,Non-metropolitan District,94599,166000,ACE grants round 1,1.75
+Rutland,Unitary Authority,39927,472100,ACE grants round 1,11.82
+Ryedale,Non-metropolitan District,55380,2034802,ACE grants round 1,36.74
+Salford,Metropolitan District,258834,4089549,ACE grants round 1,15.8
+Sandwell,Metropolitan District,328450,268501,ACE grants round 1,0.82
+Scarborough,Non-metropolitan District,108757,297705,ACE grants round 1,2.74
+Sedgemoor,Non-metropolitan District,123178,185454,ACE grants round 1,1.51
+Sefton,Metropolitan District,276410,476719,ACE grants round 1,1.72
+Sevenoaks,Non-metropolitan District,120750,602580,ACE grants round 1,4.99
+Sheffield,Metropolitan District,584853,8005722,ACE grants round 1,13.69
+Shropshire,Unitary Authority,323136,968145,ACE grants round 1,3
+Slough,Unitary Authority,149539,249127,ACE grants round 1,1.67
+Solihull,Metropolitan District,216374,204905,ACE grants round 1,0.95
+Somerset West and Taunton,Non-metropolitan District,155115,469984,ACE grants round 1,3.03
+South Cambridgeshire,Non-metropolitan District,159086,379023,ACE grants round 1,2.38
+South Gloucestershire,Unitary Authority,285093,714000,ACE grants round 1,2.5
+South Hams,Non-metropolitan District,87004,218961,ACE grants round 1,2.52
+South Holland,Non-metropolitan District,95019,234360,ACE grants round 1,2.47
+South Kesteven,Non-metropolitan District,142424,630000,ACE grants round 1,4.42
+South Lakeland,Non-metropolitan District,105088,1194978,ACE grants round 1,11.37
+South Norfolk,Non-metropolitan District,140880,248359,ACE grants round 1,1.76
+South Northamptonshire,Non-metropolitan District,94490,120025,ACE grants round 1,1.27
+South Oxfordshire,Non-metropolitan District,142057,184939,ACE grants round 1,1.3
+South Ribble,Non-metropolitan District,110788,183600,ACE grants round 1,1.66
+South Somerset,Non-metropolitan District,168345,475163,ACE grants round 1,2.82
+South Staffordshire,Non-metropolitan District,112436,250000,ACE grants round 1,2.22
+South Tyneside,Metropolitan District,150976,399680,ACE grants round 1,2.65
+Southampton,Unitary Authority,252520,4407048,ACE grants round 1,17.45
+Southend-on-Sea,Unitary Authority,183125,1418124,ACE grants round 1,7.74
+Southwark,London Borough,318830,16017392,ACE grants round 1,50.24
+St Albans,Non-metropolitan District,148452,919909,ACE grants round 1,6.2
+St. Helens,Metropolitan District,180585,665613,ACE grants round 1,3.69
+Stafford,Non-metropolitan District,137280,249901,ACE grants round 1,1.82
+Stevenage,Non-metropolitan District,87845,959104,ACE grants round 1,10.92
+Stockport,Metropolitan District,293423,364667,ACE grants round 1,1.24
+Stockton-on-Tees,Unitary Authority,197348,597946,ACE grants round 1,3.03
+Stoke-on-Trent,Unitary Authority,256375,842000,ACE grants round 1,3.28
+Stratford-on-Avon,Non-metropolitan District,130098,5563697,ACE grants round 1,42.77
+Stroud,Non-metropolitan District,119964,565641,ACE grants round 1,4.72
+Sunderland,Metropolitan District,277705,1119783,ACE grants round 1,4.03
+Surrey Heath,Non-metropolitan District,89305,70000,ACE grants round 1,0.78
+Sutton,London Borough,206349,316606,ACE grants round 1,1.53
+Swale,Non-metropolitan District,150082,85000,ACE grants round 1,0.57
+Swindon,Unitary Authority,222193,870911,ACE grants round 1,3.92
+Tameside,Metropolitan District,226493,266067,ACE grants round 1,1.17
+Tamworth,Non-metropolitan District,76696,376150,ACE grants round 1,4.9
+Tandridge,Non-metropolitan District,88129,123583,ACE grants round 1,1.4
+Teignbridge,Non-metropolitan District,134163,101000,ACE grants round 1,0.75
+Telford and Wrekin,Unitary Authority,179854,2715922,ACE grants round 1,15.1
+Tendring,Non-metropolitan District,146561,230126,ACE grants round 1,1.57
+Tewkesbury,Non-metropolitan District,95019,348391,ACE grants round 1,3.67
+Thanet,Non-metropolitan District,141922,669838,ACE grants round 1,4.72
+Three Rivers,Non-metropolitan District,93323,175000,ACE grants round 1,1.88
+Thurrock,Unitary Authority,174341,191176,ACE grants round 1,1.1
+Tonbridge and Malling,Non-metropolitan District,132153,50000,ACE grants round 1,0.38
+Torbay,Unitary Authority,136264,181500,ACE grants round 1,1.33
+Torridge,Non-metropolitan District,68267,180424,ACE grants round 1,2.64
+Tower Hamlets,London Borough,324745,9743047,ACE grants round 1,30
+Trafford,Metropolitan District,237354,1143436,ACE grants round 1,4.82
+Tunbridge Wells,Non-metropolitan District,118724,968862,ACE grants round 1,8.16
+Uttlesford,Non-metropolitan District,91284,1209252,ACE grants round 1,13.25
+Vale of White Horse,Non-metropolitan District,136007,210639,ACE grants round 1,1.55
+Wakefield,Metropolitan District,348312,998663,ACE grants round 1,2.87
+Walsall,Metropolitan District,285478,190000,ACE grants round 1,0.67
+Waltham Forest,London Borough,276983,712443,ACE grants round 1,2.57
+Wandsworth,London Borough,329677,3265572,ACE grants round 1,9.91
+Warrington,Unitary Authority,210014,226604,ACE grants round 1,1.08
+Warwick,Non-metropolitan District,143753,952108,ACE grants round 1,6.62
+Watford,Non-metropolitan District,96577,303481,ACE grants round 1,3.14
+Waverley,Non-metropolitan District,126328,456182,ACE grants round 1,3.61
+Wealden,Non-metropolitan District,161475,564981,ACE grants round 1,3.5
+West Berkshire,Unitary Authority,158450,1118517,ACE grants round 1,7.06
+West Devon,Non-metropolitan District,55796,130000,ACE grants round 1,2.33
+West Lancashire,Non-metropolitan District,114306,111116,ACE grants round 1,0.97
+West Lindsey,Non-metropolitan District,95667,196690,ACE grants round 1,2.06
+West Oxfordshire,Non-metropolitan District,110643,672154,ACE grants round 1,6.07
+West Suffolk,Non-metropolitan District,179045,1439822,ACE grants round 1,8.04
+Westminster,London Borough,261317,20535306,ACE grants round 1,78.58
+Wigan,Metropolitan District,328662,1478566,ACE grants round 1,4.5
+Wiltshire,Unitary Authority,500024,1335715,ACE grants round 1,2.67
+Winchester,Non-metropolitan District,124859,820867,ACE grants round 1,6.57
+Windsor and Maidenhead,Unitary Authority,151422,588000,ACE grants round 1,3.88
+Wirral,Metropolitan District,324011,160000,ACE grants round 1,0.49
+Woking,Non-metropolitan District,100793,413725,ACE grants round 1,4.1
+Wokingham,Unitary Authority,171119,437354,ACE grants round 1,2.56
+Wolverhampton,Metropolitan District,263357,2093345,ACE grants round 1,7.95
+Worcester,Non-metropolitan District,101222,687729,ACE grants round 1,6.79
+Worthing,Non-metropolitan District,110570,369369,ACE grants round 1,3.34
+Wrexham,NA,NA,112000,ACE grants round 1,NA
+Wychavon,Non-metropolitan District,129433,175000,ACE grants round 1,1.35
+Wyre Forest,Non-metropolitan District,101291,192188,ACE grants round 1,1.9
+York,Unitary Authority,210618,1914895,ACE grants round 1,9.09
+Adur,Non-metropolitan District,64301,156419,ACE grants round 2,2.43
+Allerdale,Non-metropolitan District,97761,396533,ACE grants round 2,4.06
+Amber Valley,Non-metropolitan District,128147,271294,ACE grants round 2,2.12
+Arun,Non-metropolitan District,160758,75000,ACE grants round 2,0.47
+Ashfield,Non-metropolitan District,127918,46644,ACE grants round 2,0.36
+Ashford,Non-metropolitan District,130032,408148,ACE grants round 2,3.14
+Babergh,Non-metropolitan District,92036,178154,ACE grants round 2,1.94
+Barking and Dagenham,London Borough,212906,177671,ACE grants round 2,0.83
+Barnet,London Borough,395869,532033,ACE grants round 2,1.34
+Barnsley,Metropolitan District,246866,844322,ACE grants round 2,3.42
+Barrow-in-Furness,Non-metropolitan District,67049,37500,ACE grants round 2,0.56
+Basildon,Non-metropolitan District,187199,390799,ACE grants round 2,2.09
+Basingstoke and Deane,Non-metropolitan District,176582,444052,ACE grants round 2,2.51
+Bath and North East Somerset,Unitary Authority,193282,1447944,ACE grants round 2,7.49
+Bedford,Unitary Authority,173292,364430,ACE grants round 2,2.1
+Bexley,London Borough,248287,460000,ACE grants round 2,1.85
+Birmingham,Metropolitan District,1141816,7705796,ACE grants round 2,6.75
+Blaby,Non-metropolitan District,101526,381000,ACE grants round 2,3.75
+Blackburn with Darwen,Unitary Authority,149696,550394,ACE grants round 2,3.68
+Blackpool,Unitary Authority,139446,912763,ACE grants round 2,6.55
+Bolsover,Non-metropolitan District,80562,1286956,ACE grants round 2,15.97
+Bolton,Metropolitan District,287550,747057,ACE grants round 2,2.6
+Boston,Non-metropolitan District,70173,64500,ACE grants round 2,0.92
+"Bournemouth, Christchurch and Poole",Unitary Authority,395331,2036218,ACE grants round 2,5.15
+Bracknell Forest,Unitary Authority,122549,112814,ACE grants round 2,0.92
+Bradford,Metropolitan District,539776,2180115,ACE grants round 2,4.04
+Braintree,Non-metropolitan District,152604,50000,ACE grants round 2,0.33
+Brent,London Borough,329771,1051180,ACE grants round 2,3.19
+Brighton and Hove,Unitary Authority,290885,5847125,ACE grants round 2,20.1
+"Bristol, City of",Unitary Authority,463377,8575698,ACE grants round 2,18.51
+Broadland,Non-metropolitan District,130783,39750,ACE grants round 2,0.3
+Bromley,London Borough,332336,173215,ACE grants round 2,0.52
+Bromsgrove,Non-metropolitan District,99881,319853,ACE grants round 2,3.2
+Broxbourne,Non-metropolitan District,97279,25000,ACE grants round 2,0.26
+Broxtowe,Non-metropolitan District,114033,38826,ACE grants round 2,0.34
+Buckinghamshire,Unitary Authority,543973,1025736,ACE grants round 2,1.89
+Burnley,Non-metropolitan District,88920,415456,ACE grants round 2,4.67
+Bury,Metropolitan District,190990,41262,ACE grants round 2,0.22
+Calderdale,Metropolitan District,211455,415494,ACE grants round 2,1.96
+Cambridge,Non-metropolitan District,124798,1847938,ACE grants round 2,14.81
+Camden,London Borough,270029,9108845,ACE grants round 2,33.73
+Cannock Chase,Non-metropolitan District,100762,58500,ACE grants round 2,0.58
+Canterbury,Non-metropolitan District,165394,544717,ACE grants round 2,3.29
+Cardiff,NA,NA,384827,ACE grants round 2,NA
+Carlisle,Non-metropolitan District,108678,35000,ACE grants round 2,0.32
+Castle Point,Non-metropolitan District,90376,27279,ACE grants round 2,0.3
+Central Bedfordshire,Unitary Authority,288648,378028,ACE grants round 2,1.31
+Charnwood,Non-metropolitan District,185851,296539,ACE grants round 2,1.6
+Chelmsford,Non-metropolitan District,178388,125000,ACE grants round 2,0.7
+Cheltenham,Non-metropolitan District,116306,1749894,ACE grants round 2,15.05
+Cherwell,Non-metropolitan District,150503,428894,ACE grants round 2,2.85
+Cheshire East,Unitary Authority,384152,637100,ACE grants round 2,1.66
+Cheshire West and Chester,Unitary Authority,343071,503215,ACE grants round 2,1.47
+Chesterfield,Non-metropolitan District,104900,219021,ACE grants round 2,2.09
+Chichester,Non-metropolitan District,121129,1202870,ACE grants round 2,9.93
+City of Edinburgh,NA,NA,35500,ACE grants round 2,NA
+City of London,London Borough,9721,1941209,ACE grants round 2,199.69
+Colchester,Non-metropolitan District,194706,1146208,ACE grants round 2,5.89
+Copeland,Non-metropolitan District,68183,440060,ACE grants round 2,6.45
+Corby,Non-metropolitan District,72218,36345,ACE grants round 2,0.5
+Cornwall,Unitary Authority,569578,2116244,ACE grants round 2,3.72
+Cotswold,Non-metropolitan District,89862,387547,ACE grants round 2,4.31
+County Durham,Unitary Authority,530094,2470578,ACE grants round 2,4.66
+Coventry,Metropolitan District,371521,1745360,ACE grants round 2,4.7
+Craven,Non-metropolitan District,57142,110552,ACE grants round 2,1.93
+Crawley,Non-metropolitan District,112409,370908,ACE grants round 2,3.3
+Croydon,London Borough,386710,1178530,ACE grants round 2,3.05
+Dacorum,Non-metropolitan District,154763,45000,ACE grants round 2,0.29
+Darlington,Unitary Authority,106803,564668,ACE grants round 2,5.29
+Derby,Unitary Authority,257302,1279736,ACE grants round 2,4.97
+Derbyshire Dales,Non-metropolitan District,72325,230905,ACE grants round 2,3.19
+Doncaster,Metropolitan District,311890,188483,ACE grants round 2,0.6
+Dorset,Unitary Authority,378508,1382598,ACE grants round 2,3.65
+Dover,Non-metropolitan District,118131,159398,ACE grants round 2,1.35
+Dudley,Metropolitan District,321596,616919,ACE grants round 2,1.92
+Ealing,London Borough,341806,892195,ACE grants round 2,2.61
+East Cambridgeshire,Non-metropolitan District,89840,186693,ACE grants round 2,2.08
+East Devon,Non-metropolitan District,146284,95000,ACE grants round 2,0.65
+East Hampshire,Non-metropolitan District,122308,66750,ACE grants round 2,0.55
+East Hertfordshire,Non-metropolitan District,149748,774283,ACE grants round 2,5.17
+East Lindsey,Non-metropolitan District,141727,170623,ACE grants round 2,1.2
+East Northamptonshire,Non-metropolitan District,94527,142206,ACE grants round 2,1.5
+East Riding of Yorkshire,Unitary Authority,341173,348351,ACE grants round 2,1.02
+East Staffordshire,Non-metropolitan District,119754,20990,ACE grants round 2,0.18
+East Suffolk,Non-metropolitan District,249461,1612262,ACE grants round 2,6.46
+Eastbourne,Non-metropolitan District,103745,2251867,ACE grants round 2,21.71
+Eastleigh,Non-metropolitan District,133584,265603,ACE grants round 2,1.99
+Eden,Non-metropolitan District,53253,239827,ACE grants round 2,4.5
+Elmbridge,Non-metropolitan District,136795,474230,ACE grants round 2,3.47
+Enfield,London Borough,333794,375306,ACE grants round 2,1.12
+Epping Forest,Non-metropolitan District,131689,86443,ACE grants round 2,0.66
+Erewash,Non-metropolitan District,115371,98000,ACE grants round 2,0.85
+Exeter,Non-metropolitan District,131405,693026,ACE grants round 2,5.27
+Fareham,Non-metropolitan District,116233,24900,ACE grants round 2,0.21
+Fenland,Non-metropolitan District,101850,93230,ACE grants round 2,0.92
+Folkestone and Hythe,Non-metropolitan District,112996,328642,ACE grants round 2,2.91
+Forest of Dean,Non-metropolitan District,86791,27550,ACE grants round 2,0.32
+Fylde,Non-metropolitan District,80780,38000,ACE grants round 2,0.47
+Gateshead,Metropolitan District,202055,717626,ACE grants round 2,3.55
+Gloucester,Non-metropolitan District,129128,88025,ACE grants round 2,0.68
+Gravesham,Non-metropolitan District,106939,143624,ACE grants round 2,1.34
+Great Yarmouth,Non-metropolitan District,99336,225890,ACE grants round 2,2.27
+Greenwich,London Borough,287942,1732782,ACE grants round 2,6.02
+Guildford,Non-metropolitan District,148998,1089697,ACE grants round 2,7.31
+Hackney,London Borough,281120,7143854,ACE grants round 2,25.41
+Halton,Unitary Authority,129410,300356,ACE grants round 2,2.32
+Hambleton,Non-metropolitan District,91594,121500,ACE grants round 2,1.33
+Hammersmith and Fulham,London Borough,185143,1843364,ACE grants round 2,9.96
+Haringey,London Borough,268647,1347370,ACE grants round 2,5.02
+Harlow,Non-metropolitan District,87067,263449,ACE grants round 2,3.03
+Harrogate,Non-metropolitan District,160831,275428,ACE grants round 2,1.71
+Harrow,London Borough,251160,734553,ACE grants round 2,2.92
+Hart,Non-metropolitan District,97073,27500,ACE grants round 2,0.28
+Hartlepool,Unitary Authority,93663,73101,ACE grants round 2,0.78
+Hastings,Non-metropolitan District,92661,919241,ACE grants round 2,9.92
+Havant,Non-metropolitan District,126220,172250,ACE grants round 2,1.36
+Havering,London Borough,259552,228259,ACE grants round 2,0.88
+"Herefordshire, County of",Unitary Authority,192801,1069469,ACE grants round 2,5.55
+Hertsmere,Non-metropolitan District,104919,708510,ACE grants round 2,6.75
+High Peak,Non-metropolitan District,92666,378092,ACE grants round 2,4.08
+Hillingdon,London Borough,306870,1036344,ACE grants round 2,3.38
+Hinckley and Bosworth,Non-metropolitan District,113136,35020,ACE grants round 2,0.31
+Horsham,Non-metropolitan District,143791,612845,ACE grants round 2,4.26
+Hounslow,London Borough,271523,892502,ACE grants round 2,3.29
+Huntingdonshire,Non-metropolitan District,177963,540765,ACE grants round 2,3.04
+Hyndburn,Non-metropolitan District,81043,109000,ACE grants round 2,1.34
+Ipswich,Non-metropolitan District,136913,575157,ACE grants round 2,4.2
+Isle of Wight,Unitary Authority,141771,489264,ACE grants round 2,3.45
+Islington,London Borough,242467,6602918,ACE grants round 2,27.23
+Kensington and Chelsea,London Borough,156129,2092638,ACE grants round 2,13.4
+King's Lynn and West Norfolk,Non-metropolitan District,151383,251769,ACE grants round 2,1.66
+"Kingston upon Hull, City of",Unitary Authority,259778,790424,ACE grants round 2,3.04
+Kingston upon Thames,London Borough,177507,462921,ACE grants round 2,2.61
+Kirklees,Metropolitan District,439787,921114,ACE grants round 2,2.09
+Knowsley,Metropolitan District,150862,342727,ACE grants round 2,2.27
+Lambeth,London Borough,326034,5612624,ACE grants round 2,17.21
+Lancaster,Non-metropolitan District,146038,361453,ACE grants round 2,2.48
+Leeds,Metropolitan District,793139,5559523,ACE grants round 2,7.01
+Leicester,Unitary Authority,354224,2003052,ACE grants round 2,5.65
+Lewes,Non-metropolitan District,103268,59000,ACE grants round 2,0.57
+Lewisham,London Borough,305842,1722135,ACE grants round 2,5.63
+Lichfield,Non-metropolitan District,104756,219483,ACE grants round 2,2.1
+Lincoln,Non-metropolitan District,99299,295715,ACE grants round 2,2.98
+Liverpool,Metropolitan District,498042,4489199,ACE grants round 2,9.01
+Luton,Unitary Authority,213052,1484435,ACE grants round 2,6.97
+Maidstone,Non-metropolitan District,171826,600845,ACE grants round 2,3.5
+Maldon,Non-metropolitan District,64926,57586,ACE grants round 2,0.89
+Malvern Hills,Non-metropolitan District,78698,527069,ACE grants round 2,6.7
+Manchester,Metropolitan District,552858,8718169,ACE grants round 2,15.77
+Mansfield,Non-metropolitan District,109313,120080,ACE grants round 2,1.1
+Medway,Unitary Authority,278556,678321,ACE grants round 2,2.44
+Melton,Non-metropolitan District,51209,60000,ACE grants round 2,1.17
+Mendip,Non-metropolitan District,115587,1090380,ACE grants round 2,9.43
+Merton,London Borough,206548,2242119,ACE grants round 2,10.86
+Mid Devon,Non-metropolitan District,82311,128115,ACE grants round 2,1.56
+Mid Suffolk,Non-metropolitan District,103895,292105,ACE grants round 2,2.81
+Mid Sussex,Non-metropolitan District,151022,101718,ACE grants round 2,0.67
+Middlesbrough,Unitary Authority,140980,1165676,ACE grants round 2,8.27
+Milton Keynes,Unitary Authority,269457,2060892,ACE grants round 2,7.65
+Mole Valley,Non-metropolitan District,87245,355613,ACE grants round 2,4.08
+New Forest,Non-metropolitan District,180086,156500,ACE grants round 2,0.87
+Newark and Sherwood,Non-metropolitan District,122421,538593,ACE grants round 2,4.4
+Newcastle upon Tyne,Metropolitan District,302820,3476637,ACE grants round 2,11.48
+Newcastle-under-Lyme,Non-metropolitan District,129441,595707,ACE grants round 2,4.6
+Newham,London Borough,353134,1804471,ACE grants round 2,5.11
+North Devon,Non-metropolitan District,97145,179120,ACE grants round 2,1.84
+North East Lincolnshire,Unitary Authority,159563,258559,ACE grants round 2,1.62
+North Hertfordshire,Non-metropolitan District,133570,354751,ACE grants round 2,2.66
+North Kesteven,Non-metropolitan District,116915,83188,ACE grants round 2,0.71
+North Lincolnshire,Unitary Authority,172292,47933,ACE grants round 2,0.28
+North Norfolk,Non-metropolitan District,104837,235656,ACE grants round 2,2.25
+North Somerset,Unitary Authority,215052,579528,ACE grants round 2,2.69
+North Tyneside,Metropolitan District,207913,76854,ACE grants round 2,0.37
+North Warwickshire,Non-metropolitan District,65264,66000,ACE grants round 2,1.01
+North West Leicestershire,Non-metropolitan District,103611,388684,ACE grants round 2,3.75
+Northampton,Non-metropolitan District,224610,1874108,ACE grants round 2,8.34
+Northumberland,Unitary Authority,322434,1171067,ACE grants round 2,3.63
+Norwich,Non-metropolitan District,140573,1615463,ACE grants round 2,11.49
+Nottingham,Unitary Authority,332900,3510501,ACE grants round 2,10.55
+Nuneaton and Bedworth,Non-metropolitan District,129883,582173,ACE grants round 2,4.48
+Oldham,Metropolitan District,237110,419777,ACE grants round 2,1.77
+Oxford,Non-metropolitan District,152457,2946607,ACE grants round 2,19.33
+Pendle,Non-metropolitan District,92112,48422,ACE grants round 2,0.53
+Peterborough,Unitary Authority,202259,1076218,ACE grants round 2,5.32
+Plymouth,Unitary Authority,262100,1546650,ACE grants round 2,5.9
+Portsmouth,Unitary Authority,214905,1143047,ACE grants round 2,5.32
+Powys,NA,NA,31500,ACE grants round 2,NA
+Preston,Non-metropolitan District,143135,279677,ACE grants round 2,1.95
+Reading,Unitary Authority,161780,981727,ACE grants round 2,6.07
+Redbridge,London Borough,305222,764025,ACE grants round 2,2.5
+Redcar and Cleveland,Unitary Authority,137150,95254,ACE grants round 2,0.69
+Redditch,Non-metropolitan District,85261,586000,ACE grants round 2,6.87
+Reigate and Banstead,Non-metropolitan District,148748,107604,ACE grants round 2,0.72
+Ribble Valley,Non-metropolitan District,60888,311256,ACE grants round 2,5.11
+Richmond upon Thames,London Borough,198019,1471784,ACE grants round 2,7.43
+Richmondshire,Non-metropolitan District,53730,26200,ACE grants round 2,0.49
+Rochdale,Metropolitan District,222412,411520,ACE grants round 2,1.85
+Rossendale,Non-metropolitan District,71482,102000,ACE grants round 2,1.43
+Rother,Non-metropolitan District,96080,361485,ACE grants round 2,3.76
+Rotherham,Metropolitan District,265411,55272,ACE grants round 2,0.21
+Rugby,Non-metropolitan District,108935,212000,ACE grants round 2,1.95
+Rushmoor,Non-metropolitan District,94599,83000,ACE grants round 2,0.88
+Rutland,Unitary Authority,39927,27917,ACE grants round 2,0.7
+Ryedale,Non-metropolitan District,55380,617950,ACE grants round 2,11.16
+Salford,Metropolitan District,258834,467277,ACE grants round 2,1.81
+Sandwell,Metropolitan District,328450,220502,ACE grants round 2,0.67
+Scarborough,Non-metropolitan District,108757,253174,ACE grants round 2,2.33
+Sedgemoor,Non-metropolitan District,123178,170602,ACE grants round 2,1.39
+Sefton,Metropolitan District,276410,159243,ACE grants round 2,0.58
+Selby,Non-metropolitan District,90620,199685,ACE grants round 2,2.2
+Sevenoaks,Non-metropolitan District,120750,290684,ACE grants round 2,2.41
+Sheffield,Metropolitan District,584853,3229600,ACE grants round 2,5.52
+Shropshire,Unitary Authority,323136,1198949,ACE grants round 2,3.71
+Slough,Unitary Authority,149539,30186,ACE grants round 2,0.2
+Solihull,Metropolitan District,216374,144835,ACE grants round 2,0.67
+Somerset West and Taunton,Non-metropolitan District,155115,338332,ACE grants round 2,2.18
+South Cambridgeshire,Non-metropolitan District,159086,212708,ACE grants round 2,1.34
+South Derbyshire,Non-metropolitan District,107261,49500,ACE grants round 2,0.46
+South Gloucestershire,Unitary Authority,285093,770484,ACE grants round 2,2.7
+South Hams,Non-metropolitan District,87004,152240,ACE grants round 2,1.75
+South Holland,Non-metropolitan District,95019,114825,ACE grants round 2,1.21
+South Kesteven,Non-metropolitan District,142424,213724,ACE grants round 2,1.5
+South Lakeland,Non-metropolitan District,105088,805599,ACE grants round 2,7.67
+South Norfolk,Non-metropolitan District,140880,168425,ACE grants round 2,1.2
+South Northamptonshire,Non-metropolitan District,94490,27500,ACE grants round 2,0.29
+South Oxfordshire,Non-metropolitan District,142057,1716590,ACE grants round 2,12.08
+South Somerset,Non-metropolitan District,168345,241960,ACE grants round 2,1.44
+South Staffordshire,Non-metropolitan District,112436,96439,ACE grants round 2,0.86
+South Tyneside,Metropolitan District,150976,191750,ACE grants round 2,1.27
+Southampton,Unitary Authority,252520,1227409,ACE grants round 2,4.86
+Southend-on-Sea,Unitary Authority,183125,94158,ACE grants round 2,0.51
+Southwark,London Borough,318830,5126813,ACE grants round 2,16.08
+Spelthorne,Non-metropolitan District,99844,366000,ACE grants round 2,3.67
+St Albans,Non-metropolitan District,148452,336784,ACE grants round 2,2.27
+St. Helens,Metropolitan District,180585,251003,ACE grants round 2,1.39
+Stafford,Non-metropolitan District,137280,444946,ACE grants round 2,3.24
+Stevenage,Non-metropolitan District,87845,749586,ACE grants round 2,8.53
+Stockport,Metropolitan District,293423,328399,ACE grants round 2,1.12
+Stockton-on-Tees,Unitary Authority,197348,452227,ACE grants round 2,2.29
+Stoke-on-Trent,Unitary Authority,256375,485981,ACE grants round 2,1.9
+Stratford-on-Avon,Non-metropolitan District,130098,1016264,ACE grants round 2,7.81
+Stroud,Non-metropolitan District,119964,296314,ACE grants round 2,2.47
+Sunderland,Metropolitan District,277705,741290,ACE grants round 2,2.67
+Sutton,London Borough,206349,158000,ACE grants round 2,0.77
+Swale,Non-metropolitan District,150082,356526,ACE grants round 2,2.38
+Swindon,Unitary Authority,222193,118888,ACE grants round 2,0.54
+Tameside,Metropolitan District,226493,410583,ACE grants round 2,1.81
+Tamworth,Non-metropolitan District,76696,710223,ACE grants round 2,9.26
+Tandridge,Non-metropolitan District,88129,129358,ACE grants round 2,1.47
+Teignbridge,Non-metropolitan District,134163,332386,ACE grants round 2,2.48
+Telford and Wrekin,Unitary Authority,179854,1418550,ACE grants round 2,7.89
+Tendring,Non-metropolitan District,146561,143000,ACE grants round 2,0.98
+Test Valley,Non-metropolitan District,126160,140824,ACE grants round 2,1.12
+Tewkesbury,Non-metropolitan District,95019,123742,ACE grants round 2,1.3
+Thanet,Non-metropolitan District,141922,714038,ACE grants round 2,5.03
+Three Rivers,Non-metropolitan District,93323,87500,ACE grants round 2,0.94
+Thurrock,Unitary Authority,174341,83200,ACE grants round 2,0.48
+Tonbridge and Malling,Non-metropolitan District,132153,371095,ACE grants round 2,2.81
+Torbay,Unitary Authority,136264,192265,ACE grants round 2,1.41
+Torridge,Non-metropolitan District,68267,40000,ACE grants round 2,0.59
+Tower Hamlets,London Borough,324745,5654952,ACE grants round 2,17.41
+Trafford,Metropolitan District,237354,1137677,ACE grants round 2,4.79
+Tunbridge Wells,Non-metropolitan District,118724,381350,ACE grants round 2,3.21
+Uttlesford,Non-metropolitan District,91284,356660,ACE grants round 2,3.91
+Vale of Glamorgan,NA,NA,50000,ACE grants round 2,NA
+Vale of White Horse,Non-metropolitan District,136007,102958,ACE grants round 2,0.76
+Wakefield,Metropolitan District,348312,549722,ACE grants round 2,1.58
+Walsall,Metropolitan District,285478,31900,ACE grants round 2,0.11
+Waltham Forest,London Borough,276983,1467855,ACE grants round 2,5.3
+Wandsworth,London Borough,329677,1820262,ACE grants round 2,5.52
+Warrington,Unitary Authority,210014,399047,ACE grants round 2,1.9
+Warwick,Non-metropolitan District,143753,926430,ACE grants round 2,6.44
+Watford,Non-metropolitan District,96577,139576,ACE grants round 2,1.45
+Waverley,Non-metropolitan District,126328,804517,ACE grants round 2,6.37
+Wealden,Non-metropolitan District,161475,874354,ACE grants round 2,5.41
+Wellingborough,Non-metropolitan District,79707,87976,ACE grants round 2,1.1
+West Berkshire,Unitary Authority,158450,547226,ACE grants round 2,3.45
+West Devon,Non-metropolitan District,55796,65000,ACE grants round 2,1.16
+West Lancashire,Non-metropolitan District,114306,101134,ACE grants round 2,0.88
+West Lindsey,Non-metropolitan District,95667,332311,ACE grants round 2,3.47
+West Oxfordshire,Non-metropolitan District,110643,192135,ACE grants round 2,1.74
+West Suffolk,Non-metropolitan District,179045,532518,ACE grants round 2,2.97
+Westminster,London Borough,261317,15044240,ACE grants round 2,57.57
+Wigan,Metropolitan District,328662,750692,ACE grants round 2,2.28
+Wiltshire,Unitary Authority,500024,1806556,ACE grants round 2,3.61
+Winchester,Non-metropolitan District,124859,807814,ACE grants round 2,6.47
+Windsor and Maidenhead,Unitary Authority,151422,214248,ACE grants round 2,1.41
+Wirral,Metropolitan District,324011,179848,ACE grants round 2,0.56
+Woking,Non-metropolitan District,100793,62000,ACE grants round 2,0.62
+Wokingham,Unitary Authority,171119,215132,ACE grants round 2,1.26
+Wolverhampton,Metropolitan District,263357,765332,ACE grants round 2,2.91
+Worcester,Non-metropolitan District,101222,1153113,ACE grants round 2,11.39
+Worthing,Non-metropolitan District,110570,411289,ACE grants round 2,3.72
+Wychavon,Non-metropolitan District,129433,175946,ACE grants round 2,1.36
+Wyre,Non-metropolitan District,112091,1271825,ACE grants round 2,11.35
+Wyre Forest,Non-metropolitan District,101291,96958,ACE grants round 2,0.96
+York,Unitary Authority,210618,2965522,ACE grants round 2,14.08
+Allerdale,Non-metropolitan District,97761,9747.350000000002,bfi,0.1
+Barnet,London Borough,395869,138333,bfi,0.35
+Barnsley,Metropolitan District,246866,88192,bfi,0.36
+Bassetlaw,Non-metropolitan District,117459,70620.8,bfi,0.6
+Birmingham,Metropolitan District,1141816,54150,bfi,0.05
+Boston,Non-metropolitan District,70173,70620.8,bfi,1.01
+Bradford,Metropolitan District,539776,79996,bfi,0.15
+"Bristol, City of",Unitary Authority,463377,46135,bfi,0.1
+Calderdale,Metropolitan District,211455,34066,bfi,0.16
+Cannock Chase,Non-metropolitan District,100762,28384,bfi,0.28
+Canterbury,Non-metropolitan District,165394,35333,bfi,0.21
+Cheshire East,Unitary Authority,384152,45997,bfi,0.12
+Chichester,Non-metropolitan District,121129,85264,bfi,0.7
+Corby,Non-metropolitan District,72218,269614,bfi,3.73
+Cornwall,Unitary Authority,569578,84238,bfi,0.15
+Craven,Non-metropolitan District,57142,48641,bfi,0.85
+Derbyshire Dales,Non-metropolitan District,72325,10802,bfi,0.15
+Doncaster,Metropolitan District,311890,70620.8,bfi,0.23
+East Devon,Non-metropolitan District,146284,92270,bfi,0.63
+East Hampshire,Non-metropolitan District,122308,9701,bfi,0.08
+East Lindsey,Non-metropolitan District,141727,125561.2,bfi,0.89
+East Staffordshire,Non-metropolitan District,119754,209643,bfi,1.75
+Eden,Non-metropolitan District,53253,64934,bfi,1.22
+Folkestone and Hythe,Non-metropolitan District,112996,41449,bfi,0.37
+Fylde,Non-metropolitan District,80780,43567,bfi,0.54
+Gloucester,Non-metropolitan District,129128,9602,bfi,0.07
+Hackney,London Borough,281120,208918.40000000002,bfi,0.74
+Haringey,London Borough,268647,107367,bfi,0.4
+Hastings,Non-metropolitan District,92661,63012,bfi,0.68
+Havering,London Borough,259552,32417,bfi,0.12
+Ipswich,Non-metropolitan District,136913,2823,bfi,0.02
+Isle of Wight,Unitary Authority,141771,28667,bfi,0.2
+King's Lynn and West Norfolk,Non-metropolitan District,151383,19135.84,bfi,0.13
+Leeds,Metropolitan District,793139,79991,bfi,0.1
+Leicester,Unitary Authority,354224,1602,bfi,0
+Lewes,Non-metropolitan District,103268,125392,bfi,1.21
+Lewisham,London Borough,305842,268052,bfi,0.88
+Maldon,Non-metropolitan District,64926,54486,bfi,0.84
+Mendip,Non-metropolitan District,115587,55020,bfi,0.48
+Mid Suffolk,Non-metropolitan District,103895,80340,bfi,0.77
+Mid Sussex,Non-metropolitan District,151022,54559,bfi,0.36
+Newcastle upon Tyne,Metropolitan District,302820,13677,bfi,0.05
+Newham,London Borough,353134,82958,bfi,0.23
+North Hertfordshire,Non-metropolitan District,133570,6969.5,bfi,0.05
+North Norfolk,Non-metropolitan District,104837,18162,bfi,0.17
+North Tyneside,Metropolitan District,207913,60021,bfi,0.29
+Northampton,Non-metropolitan District,224610,25683,bfi,0.11
+Nottingham,Unitary Authority,332900,353104,bfi,1.06
+Oxford,Non-metropolitan District,152457,25526,bfi,0.17
+Richmond upon Thames,London Borough,198019,211835,bfi,1.07
+Richmondshire,Non-metropolitan District,53730,67631,bfi,1.26
+Rother,Non-metropolitan District,96080,111266,bfi,1.16
+Ryedale,Non-metropolitan District,55380,21490,bfi,0.39
+Sedgemoor,Non-metropolitan District,123178,46135,bfi,0.37
+Sheffield,Metropolitan District,584853,174915.65999999997,bfi,0.3
+Shropshire,Unitary Authority,323136,21365,bfi,0.07
+South Hams,Non-metropolitan District,87004,90419,bfi,1.04
+South Kesteven,Non-metropolitan District,142424,70620.8,bfi,0.5
+South Lakeland,Non-metropolitan District,105088,230215.66666666666,bfi,2.19
+Southwark,London Borough,318830,170913,bfi,0.54
+St Albans,Non-metropolitan District,148452,261541,bfi,1.76
+Stockport,Metropolitan District,293423,19155,bfi,0.07
+Swale,Non-metropolitan District,150082,18162,bfi,0.12
+Teignbridge,Non-metropolitan District,134163,276810,bfi,2.06
+Telford and Wrekin,Unitary Authority,179854,2948,bfi,0.02
+Thanet,Non-metropolitan District,141922,26369,bfi,0.19
+Tower Hamlets,London Borough,324745,573412,bfi,1.77
+Tunbridge Wells,Non-metropolitan District,118724,333798,bfi,2.81
+Uttlesford,Non-metropolitan District,91284,13939,bfi,0.15
+Vale of White Horse,Non-metropolitan District,136007,197916.5,bfi,1.46
+Wandsworth,London Borough,329677,202208,bfi,0.61
+Wealden,Non-metropolitan District,161475,153560,bfi,0.95
+West Suffolk,Non-metropolitan District,179045,175978,bfi,0.98
+Westminster,London Borough,261317,31721,bfi,0.12
+Worthing,Non-metropolitan District,110570,44108,bfi,0.4
+Wychavon,Non-metropolitan District,129433,395833,bfi,3.06
+Allerdale,Non-metropolitan District,97761,9200,nlhf,0.09
+Arun,Non-metropolitan District,160758,77000,nlhf,0.48
+Ashfield,Non-metropolitan District,127918,15300,nlhf,0.12
+Ashford,Non-metropolitan District,130032,267100,nlhf,2.05
+Babergh,Non-metropolitan District,92036,12600,nlhf,0.14
+Barking and Dagenham,London Borough,212906,7800,nlhf,0.04
+Barnet,London Borough,395869,194700,nlhf,0.49
+Barnsley,Metropolitan District,246866,12500,nlhf,0.05
+Bassetlaw,Non-metropolitan District,117459,13700,nlhf,0.12
+Bath and North East Somerset,Unitary Authority,193282,215500,nlhf,1.11
+Birmingham,Metropolitan District,1141816,200600,nlhf,0.18
+Bolton,Metropolitan District,287550,17100,nlhf,0.06
+Boston,Non-metropolitan District,70173,191300,nlhf,2.73
+Bradford,Metropolitan District,539776,346600,nlhf,0.64
+Braintree,Non-metropolitan District,152604,64100,nlhf,0.42
+Breckland,Non-metropolitan District,139968,445900,nlhf,3.19
+Brent,London Borough,329771,37700,nlhf,0.11
+Brighton and Hove,Unitary Authority,290885,16300,nlhf,0.06
+"Bristol, City of",Unitary Authority,463377,1004200,nlhf,2.17
+Broadland,Non-metropolitan District,130783,188000,nlhf,1.44
+Bromsgrove,Non-metropolitan District,99881,55000,nlhf,0.55
+Broxtowe,Non-metropolitan District,114033,42700,nlhf,0.37
+Buckinghamshire,Unitary Authority,543973,785700,nlhf,1.44
+Bury,Metropolitan District,190990,100000,nlhf,0.52
+Calderdale,Metropolitan District,211455,1355900,nlhf,6.41
+Cambridge,Non-metropolitan District,124798,95600,nlhf,0.77
+Camden,London Borough,270029,203500,nlhf,0.75
+Canterbury,Non-metropolitan District,165394,2000800,nlhf,12.1
+Carlisle,Non-metropolitan District,108678,17000,nlhf,0.16
+Central Bedfordshire,Unitary Authority,288648,102800,nlhf,0.36
+Charnwood,Non-metropolitan District,185851,515700,nlhf,2.77
+Cheltenham,Non-metropolitan District,116306,106200,nlhf,0.91
+Cherwell,Non-metropolitan District,150503,33900,nlhf,0.23
+Cheshire East,Unitary Authority,384152,21500,nlhf,0.06
+Cheshire West and Chester,Unitary Authority,343071,1092900,nlhf,3.19
+Chichester,Non-metropolitan District,121129,303300,nlhf,2.5
+Chorley,Non-metropolitan District,118216,157800,nlhf,1.33
+City of London,London Borough,9721,1009000,nlhf,103.8
+Colchester,Non-metropolitan District,194706,81400,nlhf,0.42
+Copeland,Non-metropolitan District,68183,264900,nlhf,3.89
+Corby,Non-metropolitan District,72218,119800,nlhf,1.66
+Cornwall,Unitary Authority,569578,1051400,nlhf,1.85
+Cotswold,Non-metropolitan District,89862,49900,nlhf,0.56
+County Durham,Unitary Authority,530094,1046700,nlhf,1.97
+Coventry,Metropolitan District,371521,450900,nlhf,1.21
+Craven,Non-metropolitan District,57142,184400,nlhf,3.23
+Croydon,London Borough,386710,14000,nlhf,0.04
+Darlington,Unitary Authority,106803,11100,nlhf,0.1
+Daventry,Non-metropolitan District,85950,232800,nlhf,2.71
+Derby,Unitary Authority,257302,146800,nlhf,0.57
+Derbyshire Dales,Non-metropolitan District,72325,1017900,nlhf,14.07
+Doncaster,Metropolitan District,311890,55800,nlhf,0.18
+Dorset,Unitary Authority,378508,643300,nlhf,1.7
+Dudley,Metropolitan District,321596,154900,nlhf,0.48
+Ealing,London Borough,341806,290800,nlhf,0.85
+East Cambridgeshire,Non-metropolitan District,89840,210700,nlhf,2.35
+East Devon,Non-metropolitan District,146284,431700,nlhf,2.95
+East Hampshire,Non-metropolitan District,122308,207200,nlhf,1.69
+East Hertfordshire,Non-metropolitan District,149748,77600,nlhf,0.52
+East Lindsey,Non-metropolitan District,141727,143900,nlhf,1.02
+East Northamptonshire,Non-metropolitan District,94527,12500,nlhf,0.13
+East Staffordshire,Non-metropolitan District,119754,29300,nlhf,0.24
+East Suffolk,Non-metropolitan District,249461,111800,nlhf,0.45
+Eden,Non-metropolitan District,53253,520500,nlhf,9.77
+Enfield,London Borough,333794,85800,nlhf,0.26
+Epping Forest,Non-metropolitan District,131689,61900,nlhf,0.47
+Exeter,Non-metropolitan District,131405,311600,nlhf,2.37
+Fenland,Non-metropolitan District,101850,20000,nlhf,0.2
+Folkestone and Hythe,Non-metropolitan District,112996,210400,nlhf,1.86
+Forest of Dean,Non-metropolitan District,86791,171400,nlhf,1.97
+Gateshead,Metropolitan District,202055,85300,nlhf,0.42
+Gloucester,Non-metropolitan District,129128,28500,nlhf,0.22
+Great Yarmouth,Non-metropolitan District,99336,83900,nlhf,0.84
+Greenwich,London Borough,287942,843100,nlhf,2.93
+Hackney,London Borough,281120,137000,nlhf,0.49
+Hambleton,Non-metropolitan District,91594,45000,nlhf,0.49
+Hammersmith and Fulham,London Borough,185143,3000,nlhf,0.02
+Harborough,Non-metropolitan District,93807,92500,nlhf,0.99
+Harrogate,Non-metropolitan District,160831,374100,nlhf,2.33
+Harrow,London Borough,251160,57800,nlhf,0.23
+Hastings,Non-metropolitan District,92661,19100,nlhf,0.21
+"Herefordshire, County of",Unitary Authority,192801,331000,nlhf,1.72
+Hertsmere,Non-metropolitan District,104919,19100,nlhf,0.18
+High Peak,Non-metropolitan District,92666,54900,nlhf,0.59
+Hillingdon,London Borough,306870,18100,nlhf,0.06
+Hinckley and Bosworth,Non-metropolitan District,113136,8000,nlhf,0.07
+Horsham,Non-metropolitan District,143791,27800,nlhf,0.19
+Hounslow,London Borough,271523,100500,nlhf,0.37
+Huntingdonshire,Non-metropolitan District,177963,12600,nlhf,0.07
+Ipswich,Non-metropolitan District,136913,8400,nlhf,0.06
+Isle of Wight,Unitary Authority,141771,26500,nlhf,0.19
+Islington,London Borough,242467,180700,nlhf,0.75
+Kensington and Chelsea,London Borough,156129,441400,nlhf,2.83
+Kettering,Non-metropolitan District,101776,125000,nlhf,1.23
+King's Lynn and West Norfolk,Non-metropolitan District,151383,30000,nlhf,0.2
+"Kingston upon Hull, City of",Unitary Authority,259778,12700,nlhf,0.05
+Kingston upon Thames,London Borough,177507,20700,nlhf,0.12
+Lambeth,London Borough,326034,105200,nlhf,0.32
+Lancaster,Non-metropolitan District,146038,31300,nlhf,0.21
+Leeds,Metropolitan District,793139,177600,nlhf,0.22
+Leicester,Unitary Authority,354224,78000,nlhf,0.22
+Lewes,Non-metropolitan District,103268,596200,nlhf,5.77
+Lewisham,London Borough,305842,12500,nlhf,0.04
+Lichfield,Non-metropolitan District,104756,1052100,nlhf,10.04
+Lincoln,Non-metropolitan District,99299,14600,nlhf,0.15
+Liverpool,Metropolitan District,498042,487000,nlhf,0.98
+Luton,Unitary Authority,213052,127300,nlhf,0.6
+Maldon,Non-metropolitan District,64926,64500,nlhf,0.99
+Malvern Hills,Non-metropolitan District,78698,10500,nlhf,0.13
+Manchester,Metropolitan District,552858,648870,nlhf,1.17
+Medway,Unitary Authority,278556,38300,nlhf,0.14
+Melton,Non-metropolitan District,51209,21400,nlhf,0.42
+Mendip,Non-metropolitan District,115587,949100,nlhf,8.21
+Mid Suffolk,Non-metropolitan District,103895,76200,nlhf,0.73
+Milton Keynes,Unitary Authority,269457,35900,nlhf,0.13
+Mole Valley,Non-metropolitan District,87245,7800,nlhf,0.09
+New Forest,Non-metropolitan District,180086,104400,nlhf,0.58
+Newark and Sherwood,Non-metropolitan District,122421,19700,nlhf,0.16
+Newcastle upon Tyne,Metropolitan District,302820,125000,nlhf,0.41
+North East Derbyshire,Non-metropolitan District,101462,39000,nlhf,0.38
+North Kesteven,Non-metropolitan District,116915,435700,nlhf,3.73
+North Norfolk,Non-metropolitan District,104837,450500,nlhf,4.3
+North Somerset,Unitary Authority,215052,107300,nlhf,0.5
+North Tyneside,Metropolitan District,207913,55500,nlhf,0.27
+North Warwickshire,Non-metropolitan District,65264,45200,nlhf,0.69
+North West Leicestershire,Non-metropolitan District,103611,30500,nlhf,0.29
+Northampton,Non-metropolitan District,224610,151700,nlhf,0.68
+Northumberland,Unitary Authority,322434,664400,nlhf,2.06
+Norwich,Non-metropolitan District,140573,116000,nlhf,0.83
+Nottingham,Unitary Authority,332900,57900,nlhf,0.17
+Pendle,Non-metropolitan District,92112,140700,nlhf,1.53
+Plymouth,Unitary Authority,262100,159800,nlhf,0.61
+Portsmouth,Unitary Authority,214905,445500,nlhf,2.07
+Reading,Unitary Authority,161780,97200,nlhf,0.6
+Redbridge,London Borough,305222,143700,nlhf,0.47
+Ribble Valley,Non-metropolitan District,60888,45000,nlhf,0.74
+Rochdale,Metropolitan District,222412,298100,nlhf,1.34
+Rother,Non-metropolitan District,96080,390800,nlhf,4.07
+Rotherham,Metropolitan District,265411,860200,nlhf,3.24
+Runnymede,Non-metropolitan District,89424,18300,nlhf,0.2
+Rushcliffe,Non-metropolitan District,119184,35800,nlhf,0.3
+Ryedale,Non-metropolitan District,55380,135200,nlhf,2.44
+Salford,Metropolitan District,258834,19300,nlhf,0.07
+Sedgemoor,Non-metropolitan District,123178,29200,nlhf,0.24
+Sefton,Metropolitan District,276410,135100,nlhf,0.49
+Selby,Non-metropolitan District,90620,206500,nlhf,2.28
+Sevenoaks,Non-metropolitan District,120750,165100,nlhf,1.37
+Sheffield,Metropolitan District,584853,91000,nlhf,0.16
+Shropshire,Unitary Authority,323136,154500,nlhf,0.48
+Solihull,Metropolitan District,216374,47200,nlhf,0.22
+Somerset West and Taunton,Non-metropolitan District,155115,729500,nlhf,4.7
+South Cambridgeshire,Non-metropolitan District,159086,93900,nlhf,0.59
+South Gloucestershire,Unitary Authority,285093,113100,nlhf,0.4
+South Hams,Non-metropolitan District,87004,42900,nlhf,0.49
+South Holland,Non-metropolitan District,95019,12100,nlhf,0.13
+South Kesteven,Non-metropolitan District,142424,95400,nlhf,0.67
+South Lakeland,Non-metropolitan District,105088,276100,nlhf,2.63
+South Norfolk,Non-metropolitan District,140880,474900,nlhf,3.37
+South Oxfordshire,Non-metropolitan District,142057,172100,nlhf,1.21
+South Somerset,Non-metropolitan District,168345,87900,nlhf,0.52
+South Tyneside,Metropolitan District,150976,7500,nlhf,0.05
+Southampton,Unitary Authority,252520,135100,nlhf,0.54
+Southwark,London Borough,318830,245300,nlhf,0.77
+St Albans,Non-metropolitan District,148452,87400,nlhf,0.59
+Stafford,Non-metropolitan District,137280,41000,nlhf,0.3
+Staffordshire Moorlands,Non-metropolitan District,98435,371200,nlhf,3.77
+Stockton-on-Tees,Unitary Authority,197348,19500,nlhf,0.1
+Stoke-on-Trent,Unitary Authority,256375,18900,nlhf,0.07
+Stratford-on-Avon,Non-metropolitan District,130098,379200,nlhf,2.91
+Sunderland,Metropolitan District,277705,6300,nlhf,0.02
+Swale,Non-metropolitan District,150082,58800,nlhf,0.39
+Swindon,Unitary Authority,222193,14800,nlhf,0.07
+Teignbridge,Non-metropolitan District,134163,423700,nlhf,3.16
+Test Valley,Non-metropolitan District,126160,110000,nlhf,0.87
+Tewkesbury,Non-metropolitan District,95019,322200,nlhf,3.39
+Thanet,Non-metropolitan District,141922,21300,nlhf,0.15
+Torbay,Unitary Authority,136264,117600,nlhf,0.86
+Torridge,Non-metropolitan District,68267,250000,nlhf,3.66
+Tower Hamlets,London Borough,324745,493000,nlhf,1.52
+Trafford,Metropolitan District,237354,20300,nlhf,0.09
+Wakefield,Metropolitan District,348312,56100,nlhf,0.16
+Walsall,Metropolitan District,285478,10000,nlhf,0.04
+Wandsworth,London Borough,329677,10200,nlhf,0.03
+Warrington,Unitary Authority,210014,263200,nlhf,1.25
+Warwick,Non-metropolitan District,143753,50800,nlhf,0.35
+Wealden,Non-metropolitan District,161475,7900,nlhf,0.05
+West Devon,Non-metropolitan District,55796,9700,nlhf,0.17
+West Lancashire,Non-metropolitan District,114306,18900,nlhf,0.17
+West Oxfordshire,Non-metropolitan District,110643,825700,nlhf,7.46
+West Suffolk,Non-metropolitan District,179045,72900,nlhf,0.41
+Westminster,London Borough,261317,1118200,nlhf,4.28
+Wigan,Metropolitan District,328662,60200,nlhf,0.18
+Wiltshire,Unitary Authority,500024,423100,nlhf,0.85
+Winchester,Non-metropolitan District,124859,1120500,nlhf,8.97
+Windsor and Maidenhead,Unitary Authority,151422,103200,nlhf,0.68
+Wirral,Metropolitan District,324011,55000,nlhf,0.17
+Wolverhampton,Metropolitan District,263357,13600,nlhf,0.05
+Worcester,Non-metropolitan District,101222,503200,nlhf,4.97
+Wychavon,Non-metropolitan District,129433,363700,nlhf,2.81
+Wyre Forest,Non-metropolitan District,101291,17000,nlhf,0.17
+York,Unitary Authority,210618,325300,nlhf,1.54
+Buckinghamshire,Unitary Authority,543973,1500000,repayable_finance,2.76
+Dartford,Non-metropolitan District,112606,1360000,repayable_finance,12.08
+Dudley,Metropolitan District,321596,1000000,repayable_finance,3.11
+Gateshead,Metropolitan District,202055,3000000,repayable_finance,14.85
+Islington,London Borough,242467,4250000,repayable_finance,17.53
+Kensington and Chelsea,London Borough,156129,5000000,repayable_finance,32.02
+Lambeth,London Borough,326034,3590000,repayable_finance,11.01
+North East Lincolnshire,Unitary Authority,159563,2350000,repayable_finance,14.73
+Norwich,Non-metropolitan District,140573,2500000,repayable_finance,17.78
+Nottingham,Unitary Authority,332900,1000000,repayable_finance,3
+Salford,Metropolitan District,258834,7300000,repayable_finance,28.2
+Selby,Non-metropolitan District,90620,4000000,repayable_finance,44.14
+Southwark,London Borough,318830,3000000,repayable_finance,9.41
+Stratford-on-Avon,Non-metropolitan District,130098,3000000,repayable_finance,23.06
+Swindon,Unitary Authority,222193,23400000,repayable_finance,105.31
+Tower Hamlets,London Borough,324745,1000000,repayable_finance,3.08
+Westminster,London Borough,261317,8877000,repayable_finance,33.97
+York,Unitary Authority,210618,4540000,repayable_finance,21.56
+Brentwood,Non-metropolitan District,77021,NA,NA,NA
+Gosport,Non-metropolitan District,84838,NA,NA,NA
+Isles of Scilly,Unitary Authority,2224,NA,NA,NA
+Welwyn Hatfield,Non-metropolitan District,123043,NA,NA,NA
