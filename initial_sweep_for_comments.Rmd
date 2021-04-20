@@ -1,0 +1,335 @@
+---
+title: "CRF intro for playing around with"
+author: "Mark Taylor"
+date: "20/04/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+```
+
+```{r, message=FALSE}
+# load data etc
+
+# packages
+library(tidyverse)
+library(readxl)
+library(scales)
+library(janitor)
+library(ggrepel)
+library(ggridges)
+library(ggforce)
+library(kableExtra)
+library(DT)
+
+# data
+crf_money_round1 <-
+  read_excel("CRF investment data published 020421.xlsx", 2,
+             .name_repair = "universal") %>%
+  select(-Strand) %>%
+  mutate(source = "ACE grants round 1") 
+crf_money_capitalkickstart <-
+  read_excel("CRF investment data published 020421.xlsx", 3,
+             .name_repair = "universal") %>%
+  mutate(source = "ACE capital kickstart")
+crf_money_round2 <-
+  read_excel("CRF investment data published 020421.xlsx", 4,
+             .name_repair = "universal") %>%
+  mutate(source = "ACE grants round 2")
+
+bfi_money <-
+  read_excel("CRF_2-Awards_read-only.xlsx", 2,
+             skip = 1,
+             na = "-",
+             .name_repair = "universal") %>%
+  mutate(Award.... =
+           coalesce(Award....,
+                    Award.per.Cinema....))
+
+nlhf_money <-
+  read_excel("CRF_2-Awards_read-only.xlsx", 3,
+             skip = 1,
+             .name_repair = "universal")
+
+repayable_finance <-
+  read_excel("CRF_2-Awards_read-only.xlsx", 4,
+             skip = 1,
+             .name_repair = "universal") %>%
+  mutate(Local.authority = fct_recode(Local.authority,
+                                        "York" =
+                                          "City of York"))
+
+crf_money <-
+  bind_rows(crf_money_round1,
+            crf_money_round2,
+            crf_money_capitalkickstart) %>% 
+  mutate(Money = 
+           ..Awarded)
+
+
+
+population <- 
+  read_excel("ukmidyearestimates20192020ladcodes.xls", 
+           6,
+           skip = 4,
+           .name_repair = "universal") %>% 
+  select(Code:All.ages) %>% 
+  rename(la_name = 
+           Name,
+         population = 
+           All.ages) %>% 
+  filter(Geography1 != "Country" &
+           Geography1 != "Region" &
+           Geography1 != "Metropolitan County" &
+           Geography1 != "County"
+  ) %>% 
+  mutate(country = substr(Code, 
+                          1,
+                          1)) %>% 
+  filter(country == "E") %>% 
+  select(-country)
+```
+
+```{r}
+# harmonise variable names,
+# using the ace data as a standard
+
+crf_money <-
+  crf_money %>%
+  select(-c(Applicant.ACE.Area))
+
+bfi_money <-
+  bfi_money %>%
+  rename("Organisation" =
+           "Applicant.Name",
+         "Money" =
+           "Award....",
+         "Region.ONS" =
+           "Region",
+         "Local.Authority" =
+           "Local.authority") %>%
+  select(-c(Cinema,
+            Award.per.Cinema....)) %>% 
+  mutate(source = "BFI")
+
+nlhf_money <-
+  nlhf_money %>%
+  rename("Organisation" =
+           "Applicant",
+         "Discipline" =
+           "Heritage.Area",
+         "Local.Authority" =
+           "Local.authority",
+         "Region.ONS" =
+           "Region",
+         "Money" =
+          "Award....") %>% 
+  mutate(source = "NLHF")
+```
+
+## What is this document?
+
+I've been playing around with data on CRF money for a while, and it's time to try to organise it in a way that's manageable for other people to use and also looks vaguely attractive.
+
+This is obviously a very informal version of the doc, primarily so I can elicit feedback on the presentation of data.
+
+## Where's the data in this document from?
+
+The data being used in this document is from two sources. The data about funds being distributed by ACE are from [here](https://www.artscouncil.org.uk/publication/culture-recovery-fund-data), and the data about funds being distributed by BFI and NLHF, and the repayable finance, are from DCMS' site [here](https://www.gov.uk/government/news/400-million-to-help-more-than-2700-arts-culture-heritage-organisations-and-independent-cinemas-survive-and-thrive). I'm a bit less sure that the DCMS data is exhaustive, so if anyone wants to have a look and point me to anything I might have missed I'd be grateful.
+
+I have not looked into data from the other national arts councils, or any other sources, but I'm aware that this also exists. This will need to happen before anything appears publicly.
+
+## Distribution of money by discipline: ACE and BFI combined
+
+First, let's look at which disciplines got the most money. I've combined ACE and BFI (because "Film" is a category for ACE), and separated out NLHF (because they use their own classification of different forms of heritage).
+
+```{r}
+crf_money %>% 
+  bind_rows(bfi_money) %>% 
+  group_by(Discipline) %>% 
+  summarise(Money = sum(Money)) %>% 
+  datatable(options = list(pageLength = 5),
+            colnames = c("Discipline", "Total £ awarded"),
+            rownames = FALSE) %>%
+  formatCurrency('Money',
+                 currency = "£", 
+                 interval = 3, 
+                 mark = ",",
+                 digits = 0) %>% 
+  formatStyle("Money")
+  # kable(col.names = c("Discipline", "Total £ awarded"), format.args = list(big.mark = ",", 
+  # scientific = FALSE)) %>%
+  # kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+  #               full_width = FALSE)
+```
+
+## Distribution of money by heritage area: NLHF
+
+```{r}
+nlhf_money %>% 
+  group_by(Discipline) %>% 
+  summarise(Money = sum(Money)) %>% 
+  datatable(options = list(pageLength = 5),
+            colnames = c("Heritage area", "Total £ awarded"),
+            rownames = FALSE) %>%
+  formatCurrency('Money',
+                 currency = "£", 
+                 interval = 3, 
+                 mark = ",",
+                 digits = 0) %>% 
+  formatStyle("Money")
+  # kable(col.names = c("Discipline", "Total £ awarded"), format.args = list(big.mark = ",", 
+  # scientific = FALSE)) %>%
+  # kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+  #               full_width = FALSE)
+```
+
+## Distribution of money by region (all sources)
+
+Next, let's combine the different sources of money, and see where it all went. In this section, there's equivalent tables for region, local authority, and constituency.
+
+```{r}
+nlhf_money %>% 
+  bind_rows(bfi_money) %>% 
+  bind_rows(crf_money) %>% 
+  group_by(Region.ONS) %>% 
+  summarise(Money = sum(Money)) %>% 
+  datatable(options = list(pageLength = 5),
+            colnames = c("Region", "Total £ awarded"),
+            rownames = FALSE) %>%
+  formatCurrency('Money',
+                 currency = "£", 
+                 interval = 3, 
+                 mark = ",",
+                 digits = 0) %>% 
+  formatStyle("Money")
+```
+
+## Distribution of money by local authority (all sources)
+
+```{r}
+nlhf_money %>% 
+  bind_rows(bfi_money) %>% 
+  bind_rows(crf_money) %>% 
+  group_by(Local.Authority) %>% 
+  summarise(Money = sum(Money)) %>% 
+  datatable(options = list(pageLength = 5),
+            colnames = c("Local authority", "Total £ awarded"),
+            rownames = FALSE) %>%
+  formatCurrency('Money',
+                 currency = "£", 
+                 interval = 3, 
+                 mark = ",",
+                 digits = 0) %>% 
+  formatStyle("Money")
+```
+
+
+## Distribution of money by parliamentary constituency (all sources)
+
+```{r}
+nlhf_money %>% 
+  bind_rows(bfi_money) %>% 
+  bind_rows(crf_money) %>% 
+  group_by(Constituency) %>% 
+  summarise(Money = sum(Money)) %>% 
+  datatable(options = list(pageLength = 5),
+            colnames = c("Constituency", "Total £ awarded"),
+            rownames = FALSE) %>%
+  formatCurrency('Money',
+                 currency = "£", 
+                 interval = 3, 
+                 mark = ",",
+                 digits = 0) %>% 
+  formatStyle("Money")
+```
+
+## Distribution of money by local authority, with sources specified
+
+Now, let's introduce the option to break these apart. You can filter by funding scheme or by geographical unit here.
+
+```{r, message = FALSE}
+nlhf_money %>% 
+  bind_rows(bfi_money) %>% 
+  bind_rows(crf_money) %>% 
+  group_by(source, Local.Authority) %>% 
+  summarise(Money = sum(Money)) %>% 
+  mutate(source = factor(source)) %>% 
+  datatable(options = list(pageLength = 5),
+            colnames = c("Funding scheme", "Local authority", "Total £ awarded"),
+            rownames = FALSE,
+            filter = "top") %>%
+  formatCurrency('Money',
+                 currency = "£", 
+                 interval = 3, 
+                 mark = ",",
+                 digits = 0) %>% 
+  formatStyle("Money")
+```
+
+## Distribution of money by constituency, with sources specified
+
+```{r, message = FALSE}
+nlhf_money %>% 
+  bind_rows(bfi_money) %>% 
+  bind_rows(crf_money) %>% 
+  group_by(source, Constituency) %>% 
+  summarise(Money = sum(Money)) %>% 
+  mutate(source = factor(source)) %>% 
+  datatable(options = list(pageLength = 5),
+            colnames = c("Funding scheme", "Constituency", "Total £ awarded"),
+            rownames = FALSE,
+            filter = "top") %>%
+  formatCurrency('Money',
+                 currency = "£", 
+                 interval = 3, 
+                 mark = ",",
+                 digits = 0) %>% 
+  formatStyle("Money")
+```
+
+## Distribution of money by region, with sources specified
+
+```{r, message = FALSE}
+nlhf_money %>% 
+  bind_rows(bfi_money) %>% 
+  bind_rows(crf_money) %>% 
+  group_by(source, Region.ONS) %>% 
+  summarise(Money = sum(Money)) %>% 
+  mutate(source = factor(source)) %>% 
+  mutate(Region.ONS = factor(Region.ONS)) %>% 
+  datatable(options = list(pageLength = 5),
+            colnames = c("Funding scheme", "Region", "Total £ awarded"),
+            rownames = FALSE,
+            filter = "top") %>%
+  formatCurrency('Money',
+                 currency = "£", 
+                 interval = 3, 
+                 mark = ",",
+                 digits = 0) %>% 
+  formatStyle("Money")
+```
+
+## Region and artform
+
+How's the money distributed through BFI and ACE across different artforms varied across different regions?
+
+```{r}
+bfi_money %>% 
+  bind_rows(crf_money) %>% 
+  group_by(Discipline, Region.ONS) %>% 
+  summarise(Money = sum(Money))%>% 
+  mutate(Discipline = factor(Discipline))%>% 
+  mutate(Region.ONS = factor(Region.ONS)) %>% 
+  datatable(options = list(pageLength = 5),
+            colnames = c("Discipline", "Region", "Total £ awarded"),
+            rownames = FALSE,
+            filter = "top") %>%
+  formatCurrency('Money',
+                 currency = "£", 
+                 interval = 3, 
+                 mark = ",",
+                 digits = 0) %>% 
+  formatStyle("Money")
+```
