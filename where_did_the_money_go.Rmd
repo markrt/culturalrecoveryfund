@@ -1,0 +1,246 @@
+---
+title: "Where did the money go?"
+author: "Mark Taylor"
+date: "22/04/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+# load packages
+library(tidyverse)
+library(readxl)
+library(scales)
+library(janitor)
+library(ggrepel)
+library(ggridges)
+library(ggforce)
+library(sf)
+library(plotly)
+library(DT)
+library(kableExtra)
+
+# load everything that isn't a shapefile
+
+# crf money: from the ace site
+crf_money_round1 <- 
+  read_excel("CRF investment data published 020421.xlsx", 
+             2,
+             .name_repair = "universal") %>% 
+  select(-Strand) %>% 
+  mutate(source = "ACE grants round 1")
+crf_money_capitalkickstart <- 
+  read_excel("CRF investment data published 020421.xlsx", 
+             3,
+             .name_repair = "universal") %>% 
+  mutate(source = "ACE capital kickstart")
+crf_money_round2 <- 
+  read_excel("CRF investment data published 020421.xlsx", 
+             4,
+             .name_repair = "universal") %>% 
+  mutate(source = "ACE grants round 2")
+
+# crf money: from dcms
+# https://www.gov.uk/government/news/400-million-to-help-more-than-2700-arts-culture-heritage-organisations-and-independent-cinemas-survive-and-thrive
+# sheet 1 seems to be the same, so steering clear for the moment
+# bfi: weird missingness, trying to deal by replacing NAs with "per cinema"
+bfi_money <- 
+  read_excel("CRF_2-Awards_read-only.xlsx", 
+             2, 
+             skip = 1,
+             na = "-",
+             .name_repair = "universal") %>% 
+  mutate(Award.... = 
+           coalesce(Award...., 
+                    Award.per.Cinema....))
+# nlhf: looks ok
+nlhf_money <- 
+  read_excel("CRF_2-Awards_read-only.xlsx", 3, 
+             skip = 1,
+             .name_repair = "universal")
+
+# repayable finance from dcms - seems fine
+repayable_finance <- 
+  read_excel("CRF_2-Awards_read-only.xlsx", 4, 
+             skip = 1,
+             .name_repair = "universal") %>% 
+  mutate(Local.authority = fct_recode(Local.authority,
+                                        "York" = 
+                                          "City of York"))
+
+
+# population data from 2019
+# has updated local authority codes
+# https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland
+population <- 
+  read_excel("ukmidyearestimates20192020ladcodes.xls", 
+             6,
+             skip = 4,
+             .name_repair = "universal") %>% 
+  select(Code:All.ages) %>% 
+  rename(la_name = 
+           Name,
+         population = 
+           All.ages) %>% 
+  filter(Geography1 != "Country" &
+           Geography1 != "Region" &
+           Geography1 != "Metropolitan County" &
+           Geography1 != "County"
+  ) %>% 
+  mutate(country = substr(Code, 
+                          1,
+                          1)) %>% 
+  filter(country == "E") %>% 
+  select(-country)
+
+# combine crf money
+crf_money <- 
+  bind_rows(crf_money_round1,
+            crf_money_round2,
+            crf_money_capitalkickstart)
+
+# load shapefile
+local_authorities <- 
+  read_sf(dsn = "shapefiles/Local_Authority_Districts_(December_2020)_UK_BUC", 
+  layer = "Local_Authority_Districts_(December_2020)_UK_BUC")
+
+# ok, need a data frame with a column for all sources of money
+all_money_sources <- 
+  crf_money %>% 
+  group_by(Local.Authority,
+           source) %>% 
+  summarise(money = 
+              sum(..Awarded)) %>% 
+  pivot_wider(names_from = "source",
+              values_from = "money") %>% 
+  full_join(bfi_money %>% 
+    rename(Local.Authority = 
+             Local.authority) %>% 
+    group_by(Local.Authority) %>% 
+    summarise(BFI  = 
+                sum(Award....))) %>% 
+    full_join(nlhf_money %>% 
+      rename(Local.Authority = 
+               Local.authority) %>% 
+      group_by(Local.Authority) %>% 
+      summarise(NLHF  = 
+                  sum(Award....))) %>% 
+  pivot_longer(-Local.Authority) %>% 
+  mutate(value = replace_na(value, 0)) %>% 
+  rename(Source = name,
+         Money = value)
+
+# combine with population data
+all_money_population <- 
+  all_money_sources %>% 
+  full_join((population %>% 
+               rename(Local.Authority = 
+                        la_name))) %>% 
+  mutate(money_per_head = 
+           round((Money / 
+                population), 
+                2))
+
+# combine with shapefile, limit to england
+money_population_geography <- 
+  full_join(all_money_population, 
+            (local_authorities %>% 
+               rename(Code = 
+                        LAD20CD)) )%>% 
+  mutate(country = substr(Code, 
+                          1,
+                          1)) %>% 
+  filter(country == "E") %>% 
+  select(-country)
+
+
+# load npo data
+npo_data <- 
+  read_excel("NPO_2018_12082020_0.xlsx") %>% 
+  mutate(Organisation = 
+           `Applicant Name`)
+
+# npo or not
+
+npo_names <- 
+  npo_data %>% 
+  select(Organisation) %>% 
+  pull()
+
+crf_money <- 
+  crf_money %>% 
+  mutate(is_npo = 
+           if_else(Organisation %in% npo_names,
+                   "NPO",
+                   "Not NPO")) 
+```
+
+## Identifying specific recipients within local authorities
+
+How come local authorities like Manchester are home to such a large amount of Cultural Recovery Fund money? Is it because there's loads of institutions there that received medium-sized pots of money, or because there's a small number who received massive pots of money (that don't just work within that local authority, like the Science Museum Group)? Let's build a widget so people can explore. You can also see whether each organisation getting money is an NPO or not.
+
+```{r}
+crf_money %>% 
+  rename(Grant = 
+           ..Awarded) %>% 
+  select(-c(Applicant.ACE.Area,
+            Constituency)) %>% 
+  relocate(Local.Authority) %>% 
+  relocate(Region.ONS, .after = Grant) %>% 
+  datatable(options = list(pageLength = 5),
+            colnames = c("Local Authority", 
+                         "Organisation", 
+                         "Total £ awarded",
+                         "Region",
+                         "Discipline",
+                         "Scheme",
+                         "NPO?"),
+            rownames = FALSE,
+            filter = "top") %>%
+  formatCurrency('Grant',
+                 currency = "£", 
+                 interval = 3, 
+                 mark = ",",
+                 digits = 0) %>% 
+  formatStyle("Grant")
+```
+
+## How much money did NPOs and non-NPOs get by local authority?
+
+We can (briefly!) extend this by getting the total amount of money going to each local authority that went to NPOs, and that went to non-NPOs. This table also tells you what % of the money in each LA went to NPOs.
+
+```{r}
+crf_money %>% 
+  group_by(Local.Authority,
+           is_npo) %>% 
+  summarise(total_money = 
+              sum(..Awarded)) %>% 
+  pivot_wider(names_from = is_npo,
+              values_from = total_money,
+              names_repair = "universal") %>% 
+  mutate(NPO = replace_na(NPO, 0)) %>% 
+  mutate(Not.NPO = replace_na(Not.NPO, 0)) %>% 
+  mutate(percent_npo = 
+           round(NPO*100/(Not.NPO+NPO)) )%>% 
+  datatable(options = list(pageLength = 5),
+            colnames = c("Local Authority", 
+                         "Money to non-NPOs", 
+                         "Money to NPOs",
+                         "% of money to NPOs"),
+            rownames = FALSE,
+            filter = "top") %>%
+  formatCurrency('Not.NPO',
+                 currency = "£", 
+                 interval = 3, 
+                 mark = ",",
+                 digits = 0) %>% 
+  formatStyle("Not.NPO") %>%
+  formatCurrency('NPO',
+                 currency = "£", 
+                 interval = 3, 
+                 mark = ",",
+                 digits = 0) %>% 
+  formatStyle("NPO")
+
+```

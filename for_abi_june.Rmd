@@ -1,0 +1,519 @@
+---
+title: "For Abi, June"
+author: "Mark Taylor"
+date: "09/06/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE, warnings = FALSE, messages = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(readxl)
+library(scales)
+library(janitor)
+library(ggrepel)
+library(ggridges)
+library(ggforce)
+library(sf)
+library(plotly)
+library(colorspace)
+library(patchwork)
+
+# load data
+source("load_data.R")
+
+
+# load imd data
+imd <- 
+  read_excel("File_10_-_IoD2019_Local_Authority_District_Summaries__lower-tier__.xlsx",
+             2,
+             .name_repair = "universal")
+
+manc_data <- 
+  money_population_geography %>% 
+  filter(Local.Authority == "Manchester" | # just GM authorities
+           Local.Authority == "Bolton" |
+           Local.Authority == "Bury" |
+           Local.Authority == "Oldham" |
+           Local.Authority == "Rochdale" |
+           Local.Authority == "Salford" |
+           Local.Authority == "Stockport" |
+           Local.Authority == "Tameside" |
+           Local.Authority == "Trafford" |
+           Local.Authority == "Wigan" 
+  )
+
+manc_01 <- 
+  manc_data %>% 
+  filter(Source == "ACE capital kickstart") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "ACE capital kickstart") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+manc_02 <- 
+  manc_data %>% 
+  filter(Source == "ACE grants round 1") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "ACE grants round 1") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+manc_03 <- 
+  manc_data %>% 
+  filter(Source == "ACE grants round 2") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "ACE grants round 2") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+ 
+manc_04 <- 
+  manc_data %>% 
+  filter(Source == "BFI") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "BFI") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+manc_05 <- 
+  manc_data %>% 
+  filter(Source == "NLHF") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "NLHF") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+
+
+nw_01 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "North West")%>% 
+  filter(Source == "ACE capital kickstart") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "ACE capital kickstart") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+nw_02 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "North West")%>% 
+  filter(Source == "ACE grants round 1") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "ACE grants round 1") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+nw_03 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "North West")%>% 
+  filter(Source == "ACE grants round 2") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "ACE grants round 2") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+nw_04 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "North West")%>% 
+  filter(Source == "BFI") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "BFI") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+nw_05 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "North West")%>% 
+  filter(Source == "NLHF") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "NLHF") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+
+ne_01 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "North East")%>% 
+  filter(Source == "ACE capital kickstart") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "ACE capital kickstart") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+ne_02 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "North East")%>% 
+  filter(Source == "ACE grants round 1") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "ACE grants round 1") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+ne_03 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "North East")%>% 
+  filter(Source == "ACE grants round 2") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "ACE grants round 2") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+ne_04 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "North East")%>% 
+  filter(Source == "BFI") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "BFI") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+ne_05 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "North East")%>% 
+  filter(Source == "NLHF") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "NLHF") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+
+yh_01 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "Yorkshire and The Humber")%>% 
+  filter(Source == "ACE capital kickstart") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "ACE capital kickstart") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+yh_02 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "Yorkshire and The Humber")%>% 
+  filter(Source == "ACE grants round 1") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "ACE grants round 1") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+yh_03 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "Yorkshire and The Humber")%>% 
+  filter(Source == "ACE grants round 2") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "ACE grants round 2") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+yh_04 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "Yorkshire and The Humber")%>% 
+  filter(Source == "BFI") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "BFI") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+yh_05 <- 
+  money_population_geography %>% 
+  filter(Region.ONS == "Yorkshire and The Humber")%>% 
+  filter(Source == "NLHF") %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  labs(fill = "",
+       subtitle = "NLHF") +
+  theme(legend.position = "bottom") +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x))
+
+
+level_up <- 
+  read_excel("Levelling_Up_Fund_list_of_local_authorities_by_priority_category GM markup.xlsx")
+
+names(level_up) <- c("level_up_country",
+                     "Local.Authority",
+                     "level_up_priority")
+
+
+la_money_each <- 
+  crf_money %>% 
+  group_by(Local.Authority) %>% 
+  summarise(money = sum(..Awarded))
+
+
+```
+
+## What is this document?
+
+This is a home for some graphs and maps Abi's asked for in an email from the 3rd of June 2021.
+
+## Levelling up funding
+
+Abi's sent me an email with a spreadsheet of the categories for the (sketchy) Levelling Up Funding, and asked if I can look at whether CRF funding has (or hasn't) disproportionately gone to areas in each of the three categories.
+
+The below figure shows the distribution of funding per head in each local authority in each of the three categories. Please note the x axis is on a log scale, which means that the difference between £1 and £10 looks the same as the difference between £10 and £100. 
+
+```{r}
+
+money_population_geography %>% 
+  full_join(level_up) %>% 
+  filter(level_up_country == "England") %>% 
+  filter(Local.Authority != "City of London") %>% 
+  group_by(Local.Authority,
+           level_up_priority) %>% 
+  summarise(total_money_per_head = 
+           sum(money_per_head)) %>% 
+  ggplot() +
+  aes(y = fct_rev(as.factor(level_up_priority)),
+      x = total_money_per_head,
+      fill = as.factor(level_up_priority)) +
+  geom_density_ridges() +
+  scale_x_log10(breaks = c(0.1,
+                           1,
+                           10,
+                           100),
+                labels = c("10p",
+                           "£1",
+                           "£10",
+                           "£100")) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  scale_fill_viridis_d() +
+  labs(x = "Total CRF money per head, per local authority",
+       y = "Levelling up fund priority group") 
+```
+
+There's basically nothing here: the distribution of funding is pretty much identical across the categories.
+
+## Index of multiple deprivation
+
+Has more money gone to areas with higher levels of deprivation?
+
+A couple of notes on how I've done this, and some minor health warnings.
+
+- There's been some changes to local government since the 2019 IMD was published, with some local authorities grouped together to form larger local authorities. These are Buckinghamshire, North Northamptonshire, and West Northamptonshire. These aren't included in the figure. (I don't think it'll make a significant difference.)
+- The measure of IMD I'm using is the average IMD rank per local authority. A higher number means lower average deprivation. As it's an average, it'll mask variation within local authorities -- for example, Manchester includes both Moss Side, which has a lower ranking (and therefore higher deprivation), and West Didsbury, which has a higher ranking.
+- I've omitted the City of London, which looks like it gets a huge amount of £ per head, but that's because the overall population is very low.
+
+```{r}
+
+money_population_geography %>% 
+  full_join(level_up) %>% 
+  filter(level_up_country == "England") %>% 
+  filter(Local.Authority != "City of London") %>% 
+  group_by(Local.Authority,
+           level_up_priority) %>% 
+  summarise(total_money_per_head = 
+           sum(money_per_head)) %>% 
+  ggplot() +
+  aes(y = fct_rev(as.factor(level_up_priority)),
+      x = total_money_per_head,
+      fill = as.factor(level_up_priority)) +
+  geom_density_ridges() +
+  scale_x_log10(breaks = c(0.1,
+                           1,
+                           10,
+                           100),
+                labels = c("10p",
+                           "£1",
+                           "£10",
+                           "£100")) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  scale_fill_viridis_d() +
+  labs(x = "Total CRF money per head, per local authority",
+       y = "Levelling up fund priority group") 
+```
+
+There's a positive relationship between IMD rank and £ per head -- that is, on average, areas with lower levels of deprivation tended to receive more money per head. However, this isn't a particularly strong relationship - the correlation between IMD rank and £ per head is 0.25, and the correlation between IMD rank and logged £ per head is 0.29.
+
+## Maps of Manchester
+
+Here's some maps of Manchester.
+
+First, CRF £ overall by local authority:
+
+```{r}
+
+money_population_geography %>% 
+  filter(Local.Authority == "Manchester" | # just GM authorities
+           Local.Authority == "Bolton" |
+           Local.Authority == "Bury" |
+           Local.Authority == "Oldham" |
+           Local.Authority == "Rochdale" |
+           Local.Authority == "Salford" |
+           Local.Authority == "Stockport" |
+           Local.Authority == "Tameside" |
+           Local.Authority == "Trafford" |
+           Local.Authority == "Wigan" 
+  ) %>% 
+  distinct() %>% 
+  select(Local.Authority,
+         geometry,
+         money_per_head) %>% 
+  group_by(Local.Authority) %>% 
+  mutate(money_per_head = sum(money_per_head)) %>% 
+  distinct() %>% 
+  ggplot() +
+  aes(fill = money_per_head,
+      geometry = geometry) +
+  geom_sf() +
+  theme_void() +
+  scale_fill_viridis_c(labels = function(x) paste0("£", x)) +
+  theme(legend.position = "bottom") +
+  labs(fill = "",
+       title = "Overall £ per head, GM local authorities")
+
+```
+
+However, we know the significant money from the ACE capital kickstart fund is probably driving that bright yellow wedge. Let's look at how it varies by funding scheme.
+
+```{r}
+
+manc_01 + 
+  manc_02 + 
+  manc_03 + 
+  manc_04 + 
+  manc_05 + plot_annotation(title = "CRF money by GM local authority")
+```
+
+## Regions of the North
+
+Same again. Instead of looking just at GM, how about we look at the North West, North East, and Yorkshire & the Humber?
+
+As you can see these are slightly fiddly to put together (I didn't realise that the North West basically looks like the Korean peninsula) but if you need something that looks glossier let me know.
+
+```{r}
+
+nw_layout <- "
+  AA#BB#CC
+  AA#BB#CC
+  #DD##EE#
+  #DD##EE#
+  "
+
+nw_01 + 
+  nw_02 + 
+  nw_03 + 
+  nw_04 + 
+  nw_05 + plot_annotation(title = "CRF money for the North West local authorities") +
+  plot_layout(design = nw_layout)
+
+```
+
+```{r}
+
+ne_01 + 
+  ne_02 + 
+  ne_03 + 
+  ne_04 + 
+  ne_05 + plot_annotation(title = "CRF money for the North East local authorities")
+
+```
+
+```{r}
+
+
+yh_01 + 
+  yh_02 + 
+  yh_03 + 
+  yh_04 + 
+  yh_05 + plot_annotation(title = "CRF money for the Yorkshire & the Humber local authorities")
+```
