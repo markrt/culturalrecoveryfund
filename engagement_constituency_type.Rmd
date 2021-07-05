@@ -300,7 +300,8 @@ hoc_use %>%
   theme(panel.grid = element_blank(),
         axis.text.x = element_blank()) +
   labs(x = "",
-       y = "")
+       y = "") +
+  scale_x_continuous(limits = c(0, 42))
 ```
 
 This shows us that the largest spend per head has gone to the non-London core cities, followed by London. To an extent, this will reflect the different ways that constituencies are classified. Constituencies in the outer boroughs of London are classified as being in London, while constituencies in the city-regions of the core cities, but outside the LA boundaries of those cities themselves, aren't; for example, Salford  & Eccles is classified as a large town under this classifications. My guess is that if we separated out inner and outer London, we'd see much higher spend per head in inner than in outer.

@@ -394,32 +394,25 @@ A couple of notes on how I've done this, and some minor health warnings.
 
 ```{r}
 
-money_population_geography %>% 
-  full_join(level_up) %>% 
-  filter(level_up_country == "England") %>% 
-  filter(Local.Authority != "City of London") %>% 
+
+
+imd %>% 
+  rename("Local.Authority" = 
+           "Local.Authority.District.name..2019.") %>%
+  right_join(money_population_geography) %>% 
+  distinct() %>% 
   group_by(Local.Authority,
-           level_up_priority) %>% 
-  summarise(total_money_per_head = 
-           sum(money_per_head)) %>% 
+           IMD...Average.rank) %>% 
+  summarise(money_per_head = sum(money_per_head)) %>% 
+  filter(money_per_head < 500) %>% 
   ggplot() +
-  aes(y = fct_rev(as.factor(level_up_priority)),
-      x = total_money_per_head,
-      fill = as.factor(level_up_priority)) +
-  geom_density_ridges() +
-  scale_x_log10(breaks = c(0.1,
-                           1,
-                           10,
-                           100),
-                labels = c("10p",
-                           "£1",
-                           "£10",
-                           "£100")) +
+  aes(x = money_per_head,
+      y = IMD...Average.rank) +
+  geom_point()  +
+  scale_x_log10() +
   theme_minimal() +
-  theme(legend.position = "none") +
-  scale_fill_viridis_d() +
-  labs(x = "Total CRF money per head, per local authority",
-       y = "Levelling up fund priority group") 
+  labs(x = "£ per head, all CRF sources",
+       y = "IMD average rank by Local Authority\n (lower number = more deprived)")
 ```
 
 There's a positive relationship between IMD rank and £ per head -- that is, on average, areas with lower levels of deprivation tended to receive more money per head. However, this isn't a particularly strong relationship - the correlation between IMD rank and £ per head is 0.25, and the correlation between IMD rank and logged £ per head is 0.29.

@@ -17,6 +17,7 @@ library(ggridges)
 library(ggforce)
 library(sf)
 library(plotly)
+library(colorspace)
 
 # load everything that isn't a shapefile
 
@@ -166,10 +167,12 @@ ace_round1 <-
   money_population_geography %>%
   filter(Source == "ACE grants round 1") 
 
+ace_round1$money_var <- cut_number(ace_round1$Money, n = 15)
+
 for_ggplotly_ace_round1 <- 
   ggplot(ace_round1) +
   aes(geometry = geometry,
-      fill = Money,
+      fill = money_var,
       text = paste(Local.Authority, 
                    ": \n£", 
                    money_per_head, 
@@ -178,8 +181,7 @@ for_ggplotly_ace_round1 <-
                          accuracy = 2L))) +
   geom_sf() +
   theme_void() +
-  scale_fill_viridis_c(direction = -1,
-                       option = "A") +
+  scale_fill_discrete_diverging(palette = "Tropic") +
   theme(legend.position = "none") 
 
 ggplotly(for_ggplotly_ace_round1,
@@ -194,10 +196,12 @@ ace_round2 <-
   money_population_geography %>%
   filter(Source == "ACE grants round 2") 
 
+ace_round2$money_var <- cut_number(ace_round2$Money, n = 15)
+
 for_ggplotly_ace_round2 <- 
   ggplot(ace_round2) +
   aes(geometry = geometry,
-      fill = Money,
+      fill = money_var,
       text = paste(Local.Authority, 
                    ": \n£", 
                    money_per_head, 
@@ -206,8 +210,7 @@ for_ggplotly_ace_round2 <-
                          accuracy = 2L))) +
   geom_sf() +
   theme_void() +
-  scale_fill_viridis_c(direction = -1,
-                       option = "A") +
+  scale_fill_discrete_diverging(palette = "Tropic") +
   theme(legend.position = "none") 
 
 ggplotly(for_ggplotly_ace_round2,
